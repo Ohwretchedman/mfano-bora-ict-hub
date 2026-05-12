@@ -7,7 +7,6 @@ const navLinks = Array.from(document.querySelectorAll('.nav-link'))
 const yearNode = document.querySelector('#current-year')
 const localFaviconNode = document.querySelector('[data-local-favicon]')
 
-// Keep the footer year current without manual edits.
 if (yearNode) {
   yearNode.textContent = new Date().getFullYear().toString()
 }
@@ -16,7 +15,7 @@ if (localFaviconNode) {
   localFaviconNode.src = localFaviconUrl
 }
 
-// Toggle the mobile navigation on smaller screens.
+
 if (menuToggle && header) {
   menuToggle.addEventListener('click', () => {
     const isOpen = header.classList.toggle('nav-open')
@@ -24,7 +23,6 @@ if (menuToggle && header) {
   })
 }
 
-// Close the mobile menu after a navigation choice is made.
 navLinks.forEach((link) => {
   link.addEventListener('click', () => {
     if (!header || !menuToggle) {
@@ -36,7 +34,6 @@ navLinks.forEach((link) => {
   })
 })
 
-// Add depth to the sticky header as the user scrolls.
 const updateHeaderState = () => {
   if (!header) {
     return
@@ -48,7 +45,6 @@ const updateHeaderState = () => {
 updateHeaderState()
 window.addEventListener('scroll', updateHeaderState, { passive: true })
 
-// Highlight the currently visible section in the navigation.
 const sectionIds = ['home', 'services', 'innovation-hub', 'events', 'contact']
 const observedSections = sectionIds
   .map((id) => document.getElementById(id))
@@ -81,7 +77,6 @@ if (observedSections.length > 0 && 'IntersectionObserver' in window) {
   observedSections.forEach((section) => observer.observe(section))
 }
 
-// Allow keyboard users to close the menu with Escape.
 window.addEventListener('keydown', (event) => {
   if (event.key !== 'Escape' || !header || !menuToggle) {
     return
@@ -92,7 +87,7 @@ window.addEventListener('keydown', (event) => {
   menuToggle.focus()
 })
 
-// Prevent menu overflow on resize when the viewport changes between breakpoints.
+
 window.addEventListener('resize', () => {
   if (!header || !menuToggle) {
     return
