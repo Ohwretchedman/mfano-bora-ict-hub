@@ -158,6 +158,13 @@ a {
   font-size: 0.88rem;
   font-weight: 900;
   letter-spacing: 0.08em;
+  overflow: hidden;
+}
+
+.brand__mark-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .brand__text {
@@ -382,7 +389,8 @@ a {
   overflow: hidden;
   background:
     linear-gradient(180deg, rgba(2, 8, 23, 0.08), rgba(2, 8, 23, 0.56)),
-    url('./assets/hero.png') center/cover no-repeat;
+    linear-gradient(135deg, rgba(244, 180, 0, 0.2), rgba(2, 8, 23, 0.02)),
+    url('/mfano-bora-africa.png') center/contain no-repeat;
   box-shadow: 0 24px 60px rgba(2, 8, 23, 0.18);
 }
 
@@ -602,6 +610,75 @@ a {
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.72), rgba(244, 180, 0, 0.96));
 }
 
+/* Brand asset showcase */
+.section--assets {
+  background:
+    radial-gradient(circle at top left, rgba(244, 180, 0, 0.14), transparent 30%),
+    linear-gradient(180deg, #fff 0%, #f7f9fc 100%);
+}
+
+.section-intro {
+  max-width: 44rem;
+  margin: 0.8rem auto 0;
+  color: var(--muted);
+}
+
+.asset-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.asset-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid rgba(2, 8, 23, 0.08);
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 12px 30px rgba(2, 8, 23, 0.06);
+}
+
+.asset-card--featured {
+  grid-column: 1 / -1;
+  align-items: start;
+  padding: 1.25rem;
+}
+
+.asset-card img {
+  width: 4.25rem;
+  height: 4.25rem;
+  object-fit: contain;
+  padding: 0.35rem;
+  border-radius: 18px;
+  background: linear-gradient(180deg, #f7f9fc 0%, #ffffff 100%);
+  border: 1px solid rgba(2, 8, 23, 0.08);
+}
+
+.asset-card--featured img {
+  width: 6.5rem;
+  height: 6.5rem;
+}
+
+.asset-card h3 {
+  margin: 0;
+  color: var(--navy);
+  font-size: 1rem;
+}
+
+.asset-card p {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.asset-card--featured>div {
+  align-self: center;
+}
+
 /* Footer */
 .site-footer {
   padding: 4.5rem 0 2rem;
@@ -743,6 +820,10 @@ a {
     min-height: 460px;
   }
 
+  .asset-grid {
+    grid-template-columns: 1fr;
+  }
+
   .service-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -797,6 +878,17 @@ a {
 
   .hero__image-card {
     min-height: 380px;
+  }
+
+  .asset-card {
+    grid-template-columns: 1fr;
+    justify-items: start;
+  }
+
+  .asset-card img,
+  .asset-card--featured img {
+    width: 5rem;
+    height: 5rem;
   }
 }
 

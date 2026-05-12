@@ -1,14 +1,19 @@
 import './style.css'
+import localFaviconUrl from './assets/favicon.ico'
 
 const header = document.querySelector('.site-header')
 const menuToggle = document.querySelector('.menu-toggle')
-const navigation = document.querySelector('[data-navigation]')
 const navLinks = Array.from(document.querySelectorAll('.nav-link'))
 const yearNode = document.querySelector('#current-year')
+const localFaviconNode = document.querySelector('[data-local-favicon]')
 
 // Keep the footer year current without manual edits.
 if (yearNode) {
   yearNode.textContent = new Date().getFullYear().toString()
+}
+
+if (localFaviconNode) {
+  localFaviconNode.src = localFaviconUrl
 }
 
 // Toggle the mobile navigation on smaller screens.

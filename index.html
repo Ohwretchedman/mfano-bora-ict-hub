@@ -7,7 +7,11 @@
   <meta name="description"
     content="Mfano Bora Africa ICT Hub is a professional digital transformation and skills development center empowering communities across Africa." />
   <meta name="theme-color" content="#020817" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
   <title>Mfano Bora Africa ICT Hub</title>
 </head>
 
@@ -17,7 +21,9 @@
     <header class="site-header" id="top">
       <div class="container nav-bar">
         <a class="brand" href="#home" aria-label="Mfano Bora Africa ICT Hub home">
-          <span class="brand__mark" aria-hidden="true">MB</span>
+          <span class="brand__mark" aria-hidden="true">
+            <img class="brand__mark-image" src="/mfano-bora-africa.png" alt="" />
+          </span>
           <span class="brand__text">
             <strong>Mfano Bora</strong>
             <span>Africa ICT Hub</span>
@@ -291,6 +297,86 @@
           </div>
         </div>
       </section>
+
+      <!-- Brand asset showcase -->
+      <section class="section section--assets" id="brand-assets">
+        <div class="container">
+          <div class="section-heading section-heading--centered">
+            <span class="eyebrow eyebrow--dark">BRAND ASSETS</span>
+            <h2>Every logo and icon in use</h2>
+            <p class="section-intro">
+              The public icon set and the local favicon asset are all surfaced here so the site actively uses the full
+              brand library.
+            </p>
+          </div>
+
+          <div class="asset-grid" aria-label="Brand asset gallery">
+            <article class="asset-card asset-card--featured">
+              <img src="/mfano-bora-africa.png" alt="Mfano Bora Africa logo" />
+              <div>
+                <h3>Mfano Bora Africa logo</h3>
+                <p>Main brand image used for the header, hero visual, and identity showcase.</p>
+              </div>
+            </article>
+
+            <article class="asset-card">
+              <img src="/favicon-16x16.png" alt="16 by 16 favicon" />
+              <div>
+                <h3>favicon-16x16.png</h3>
+                <p>Compact browser icon for small tabs and compact surfaces.</p>
+              </div>
+            </article>
+
+            <article class="asset-card">
+              <img src="/favicon-32x32.png" alt="32 by 32 favicon" />
+              <div>
+                <h3>favicon-32x32.png</h3>
+                <p>Standard browser tab icon for desktop and mobile browsers.</p>
+              </div>
+            </article>
+
+            <article class="asset-card">
+              <img src="/apple-touch-icon.png" alt="Apple touch icon" />
+              <div>
+                <h3>apple-touch-icon.png</h3>
+                <p>Touch-friendly launcher icon for iOS home screen shortcuts.</p>
+              </div>
+            </article>
+
+            <article class="asset-card">
+              <img src="/android-chrome-192x192.png" alt="Android chrome icon at 192 by 192 pixels" />
+              <div>
+                <h3>android-chrome-192x192.png</h3>
+                <p>Android app-style icon for progressive web app surfaces.</p>
+              </div>
+            </article>
+
+            <article class="asset-card">
+              <img src="/android-chrome-512x512.png" alt="Android chrome icon at 512 by 512 pixels" />
+              <div>
+                <h3>android-chrome-512x512.png</h3>
+                <p>High-resolution Android launcher icon for large displays.</p>
+              </div>
+            </article>
+
+            <article class="asset-card">
+              <img src="/favicon.ico" alt="Public favicon in ICO format" />
+              <div>
+                <h3>favicon.ico</h3>
+                <p>Classic ICO favicon for broad browser compatibility.</p>
+              </div>
+            </article>
+
+            <article class="asset-card">
+              <img data-local-favicon alt="Local favicon from src assets" />
+              <div>
+                <h3>src/assets/favicon.ico</h3>
+                <p>Local source asset imported through the module bundle.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
@@ -298,7 +384,9 @@
       <div class="container footer-grid">
         <div class="footer-brand">
           <a class="brand brand--footer" href="#home" aria-label="Mfano Bora Africa ICT Hub home">
-            <span class="brand__mark" aria-hidden="true">MB</span>
+            <span class="brand__mark" aria-hidden="true">
+              <img class="brand__mark-image" src="/mfano-bora-africa.png" alt="" />
+            </span>
             <span class="brand__text">
               <strong>Mfano Bora</strong>
               <span>Africa ICT Hub</span>
