@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Mfano Africa ICT Hub</title>
+    <script src="https://cdn.jsdelivr.net/npm/lucide@latest"></script>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="./index.html" class="nav-logo">
+            <img src="/favicon.ico" alt="Mfano Bora Logo" class="icon-nav">
+            <span class="logo-text">Mfano Africa <span>ICT Hub</span></span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./courses.html">Courses</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+            <li><a href="./blog.html" class="active">Blog</a></li>
+            <li><a href="./contact.html" class="nav-cta">Get In Touch</a></li>
+        </ul>
+        <button class="hamburger" onclick="toggleMobileMenu()">☰</button>
+    </nav>
+
+    <!-- BLOG HERO -->
+    <section class="pt-hero">
+        <div class="reveal text-center">
+            <div class="section-label">News & Insights</div>
+            <h2 class="section-title">Latest From <span class="text-cyan">The Hub</span></h2>
+            <p class="section-sub">Tips, success stories, and the latest in African technology.</p>
+        </div>
+
+        <div class="blog-grid">
+            <div class="blog-card reveal">
+                <div class="blog-banner bg-gradient-dark">
+                    <svg class="lucide-lightbulb icon-xl opacity-50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1.3.5 2.6 1.5 3.5.8.8 1.3 1.5 1.5 2.5"></path><path d="M9 18h6"></path><path d="M10 22h4"></path></svg>
+                </div>
+                <div class="blog-body">
+                    <div class="blog-cat">ICT Tips</div>
+                    <h3>5 Free Tools Every Aspiring Developer Must Know in 2025</h3>
+                    <p>Level up your coding workflow with these essential free tools trusted by professional developers worldwide.</p>
+                </div>
+                <div class="blog-footer">
+                    <span>May 8, 2025</span>
+                    <a href="#" class="read-more">Read More →</a>
+                </div>
+            </div>
+
+            <div class="blog-card reveal">
+                <div class="blog-banner bg-gradient-emerald">
+                    <svg class="lucide-award icon-xl opacity-50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"></circle><path d="M12 15v7M8 22h8"></path></svg>
+                </div>
+                <div class="blog-body">
+                    <div class="blog-cat">Success Story</div>
+                    <h3>How Wanjiru Went From Housewife to Senior UX Designer in 8 Months</h3>
+                    <p>An inspiring journey of determination, skill-building, and how Mfanabora's programs made it possible.</p>
+                </div>
+                <div class="blog-footer">
+                    <span>Apr 22, 2025</span>
+                    <a href="#" class="read-more">Read More →</a>
+                </div>
+            </div>
+
+            <div class="blog-card reveal">
+                <div class="blog-banner bg-gradient-violet">
+                    <svg class="lucide-newspaper icon-xl opacity-50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"></path><path d="M18 14h-8"></path><path d="M15 18h-5"></path><path d="M10 6h8v4h-8V6Z"></path></svg>
+                </div>
+                <div class="blog-body">
+                    <div class="blog-cat">Tech News</div>
+                    <h3>AI Is Changing Jobs in Kenya — Here's How to Stay Ahead</h3>
+                    <p>What the artificial intelligence revolution means for Kenyan workers, and the skills you need to remain relevant.</p>
+                </div>
+                <div class="blog-footer">
+                    <span>Apr 15, 2025</span>
+                    <a href="#" class="read-more">Read More →</a>
+                </div>
+            </div>
+
+            <div class="blog-card reveal">
+                <div class="blog-banner bg-gradient-brown">
+                    <svg class="lucide-calendar icon-xl opacity-50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                </div>
+                <div class="blog-body">
+                    <div class="blog-cat">Events</div>
+                    <h3>Mfano Bora Hackathon 2025 — Applications Now Open!</h3>
+                    <p>Join 200+ students and developers for a 48-hour innovation sprint. Cash prizes and mentorship up for grabs.</p>
+                </div>
+                <div class="blog-footer">
+                    <span>Mar 30, 2025</span>
+                    <a href="#" class="read-more">Read More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- FOOTER -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="./index.html" class="nav-logo">
+                    <img src="/favicon.ico" alt="Mfano Bora Logo" class="icon-logo">
+                    <span class="logo-text">Mfano Africa <span>ICT Hub</span></span>
+                </a>
+                <p>Kenya's leading ICT Hub empowering the next generation of African tech professionals through
+                    world-class training, innovation, and mentorship.</p>
+                <div class="social-links">
+                    <a class="social-btn" title="Facebook"><svg class="lucide-facebook icon-med" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path d="M18 2h-3a6 6 0 0 0-6 6v3H7v4h2v8h4v-8h3l1-4h-4V8a1 1 0 0 1 1-1h3z"></path>
+                        </svg></a>
+                    <a class="social-btn" title="X"><svg class="icon-med" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932 6.064-6.932zm-1.292 19.49h2.039L6.486 3.24H4.298l13.311 17.403z"></path>
+                        </svg></a>
+                    <a class="social-btn" title="Instagram"><svg class="lucide-instagram icon-med" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <circle cx="17.5" cy="6.5" r="1.5"></circle>
+                        </svg></a>
+                    <a class="social-btn" title="LinkedIn"><svg class="lucide-linkedin icon-med" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                            </path>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./services.html">Our Services</a></li>
+                    <li><a href="./courses.html">Courses</a></li>
+                    <li><a href="./portfolio.html">Portfolio</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h5>Programs</h5>
+                <ul>
+                    <li><a href="./courses.html">Digital Literacy</a></li>
+                    <li><a href="./courses.html">Web Technologies</a></li>
+                    <li><a href="./courses.html">Graphic Design</a></li>
+                    <li><a href="./courses.html">Digital Business</a></li>
+                    <li><a href="./courses.html">Computer Basics</a></li>
+                    <li><a href="./courses.html">Technical Skills</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h5>Contact</h5>
+                <ul>
+                    <li><a href="tel:+254700000000"><svg class="lucide-phone icon-small inline-block" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg> +254 700 000 000</a></li>
+                    <li><a href="mailto:info@mfanoboraafrica.com"><svg class="lucide-mail icon-small inline-block" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                            </svg> info@mfanoboraafrica.com</a></li>
+                    <li><a href="./contact.html"><svg class="lucide-map-pin icon-small inline-block" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg> Mfano House, Ole Sein Rd, Nairobi, Kenya</a></li>
+                    <li><a href="./contact.html"><svg class="lucide-clock icon-small inline-block" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="9"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg> Mon–Fri: 7AM–5PM | Sat: 8AM–1PM</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© <span id="current-year">2025</span> <span>Mfano Africa ICT Hub</span>. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Sitemap</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./src/main.js"></script>
+</body>
+</html>

@@ -1,383 +1,740 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="Mfano Bora Africa ICT Hub is a professional digital transformation and skills development center empowering communities across Africa." />
-  <meta name="theme-color" content="#020817" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-  <link rel="manifest" href="/site.webmanifest" />
-  <title>Mfano Bora Africa ICT Hub</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mfano Africa ICT Hub</title>
+    <script src="https://cdn.jsdelivr.net/npm/lucide@latest"></script>
+    <link rel="stylesheet" href="./src/style.css">
 </head>
 
 <body>
-  <div class="site-shell">
 
-    <header class="site-header" id="top">
-      <div class="container nav-bar">
-        <a class="brand" href="#home" aria-label="Mfano Bora Africa ICT Hub home">
-          <span class="brand__mark" aria-hidden="true">
-            <img class="brand__mark-image" src="/mfano-bora-africa.png" alt="" />
-          </span>
-          <span class="brand__text">
-            <strong>Mfano Bora Africa LTD</strong>
-            <span>Setting the standard in transportation and logistics across Africa</span>
-          </span>
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="./index.html" class="nav-logo">
+            <img src="/favicon.ico" alt="Mfano Bora Logo" class="icon-nav">
+            <span class="logo-text">Mfano Africa <span>ICT Hub</span></span>
         </a>
+        <ul class="nav-links">
+            <li><a href="./index.html" class="active">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./courses.html">Courses</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./contact.html" class="nav-cta">Get In Touch</a></li>
+        </ul>
+        <button class="hamburger" onclick="toggleMobileMenu()">☰</button>
+    </nav>
 
-        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
-          <span class="sr-only">Open menu</span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </button>
+    <!-- HERO -->
+    <section id="hero">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
 
-        <nav class="site-nav" id="primary-navigation" data-navigation>
-          <a href="#home" class="nav-link is-active">Home</a>
-          <a href="#logistics-awards" class="nav-link">Logistic Awards</a>
-          <a href="#road-safety-club" class="nav-link">Road Safety Club</a>
-          <a href="#home" class="nav-link">ICT Hub</a>
-          <a href="#career" class="nav-link">Career</a>
-          <a href="#contact" class="nav-link">Contact Us</a>
-        </nav>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="dot"></span>
+                Kenya's Premier ICT Training Hub
+            </div>
 
-        <button class="search-button" type="button" aria-label="Search site">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path
-              d="M10.5 4a6.5 6.5 0 1 1 4.15 11.5l4.68 4.69-1.42 1.41-4.69-4.68A6.5 6.5 0 0 1 10.5 4Zm0 2a4.5 4.5 0 1 0 0 9 4.5 4.5 0 0 0 0-9Z" />
-          </svg>
-        </button>
-      </div>
-    </header>
+            <h1>Building <span class="text-gold">Kenya's Future</span><br>Through <span
+                    class="text-cyan">Technology</span><br>&
+                Innovation</h1>
 
-    <main>
-
-      <section class="hero section" id="home">
-        <div class="container hero__grid">
-          <div class="hero__copy">
-            <div class="eyebrow">EMPOWER • INNOVATE • CONNECT</div>
-            <h1>Mfano Bora Africa ICT Hub</h1>
-            <p class="hero__lead">
-              A center for digital transformation, innovation, and skills development empowering communities across
-              Africa.
+            <p class="hero-desc">
+                Empowering individuals and communities with world-class digital skills,
+                cutting-edge ICT training, and innovation programs that unlock Africa's
+                full potential in the digital era.
             </p>
 
-            <div class="hero__features" aria-label="Key highlights">
-              <article class="feature-card">
-                <span class="feature-card__icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24">
-                    <path
-                      d="M7 20h10v-2H7v2Zm5-16a6 6 0 0 0-3 11.2V16h6v-.8A6 6 0 0 0 12 4Zm0 2a4 4 0 0 1 2.83 6.83l-.83.83V14h-4v-.34l-.83-.83A4 4 0 0 1 12 6Z" />
-                  </svg>
-                </span>
-                <h2>Learn</h2>
-                <p>Practical digital skills for students, professionals, and community members.</p>
-              </article>
-
-              <article class="feature-card">
-                <span class="feature-card__icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24">
-                    <path
-                      d="M12 2 3 7v10l9 5 9-5V7l-9-5Zm0 2.3 6.7 3.7L12 11.7 5.3 8 12 4.3ZM5 9.7l6 3.3v7.6l-6-3.3V9.7Zm8 10.9v-7.6l6-3.3v7.6l-6 3.3Z" />
-                  </svg>
-                </span>
-                <h2>Innovate</h2>
-                <p>Build solutions, test ideas, and turn community needs into practical tools.</p>
-              </article>
-
-              <article class="feature-card">
-                <span class="feature-card__icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24">
-                    <path
-                      d="M4 5h16v10H4V5Zm2 2v6h12V7H6Zm-2 12h16v2H4v-2Zm5-5 3-3 2 2 4-5 1.6 1.2-5.4 6.8-2-2-2.2 2.2L9 15Z" />
-                  </svg>
-                </span>
-                <h2>Work</h2>
-                <p>Prepare for employability with modern workplace tools and readiness programs.</p>
-              </article>
-
-              <article class="feature-card">
-                <span class="feature-card__icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24">
-                    <path
-                      d="M12 2a7 7 0 0 0-7 7c0 4.2 7 13 7 13s7-8.8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z" />
-                  </svg>
-                </span>
-                <h2>Connect</h2>
-                <p>Collaborate with mentors, partners, and local institutions across Africa.</p>
-              </article>
+            <div class="hero-buttons">
+                <a href="./courses.html" class="btn-primary">
+                    <svg class="lucide-graduation-cap" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon-med">
+                        <path d="M22 10v6M2 10l10-5 10 5-10 5-10-5z"></path>
+                        <path d="M6 12.5v5a6 6 0 0 0 6 6 6 6 0 0 0 6-6v-5"></path>
+                    </svg> Join Training
+                </a>
+                <a href="./about.html" class="btn-secondary">
+                    Learn More →
+                </a>
             </div>
 
-            <div class="hero__actions">
-              <a class="button button--primary" href="#services">Explore Programs</a>
-              <a class="button button--secondary" href="#contact">Visit the Hub</a>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-num">500<span>+</span></span>
+                    <span class="stat-label">Students Trained</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num">50<span>+</span></span>
+                    <span class="stat-label">Projects Completed</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num">10<span>+</span></span>
+                    <span class="stat-label">ICT Programs</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num">95<span>%</span></span>
+                    <span class="stat-label">Success Rate</span>
+                </div>
             </div>
-          </div>
-
-          <div class="hero__visual" aria-label="People working in a modern workplace">
-            <div class="hero__image-card">
-              <div class="hero__image-overlay"></div>
-              <div class="hero__floating-card">
-                <span class="hero__floating-label">High-Speed Connectivity</span>
-                <p>Reliable digital infrastructure designed for learning, collaboration, and enterprise support.</p>
-              </div>
-            </div>
-          </div>
         </div>
-      </section>
 
 
-      <section class="section section--muted" id="services">
-        <div class="container program-layout">
-          <div class="program-layout__left">
-            <div class="section-heading section-heading--centered">
-              <span class="eyebrow eyebrow--dark">WHAT WE OFFER</span>
-              <h2>What We Offer</h2>
-            </div>
+    </section>
 
-            <div class="service-grid">
-              <article class="service-card">
-                <span class="service-card__icon service-card__icon--amber" aria-hidden="true">
-                  <svg viewBox="0 0 24 24">
-                    <path d="M4 4h16v10H4V4Zm2 2v6h12V6H6Zm-1 10h14v2H5v-2Zm3 3h8v2H8v-2Z" />
-                  </svg>
-                </span>
-                <h3>Technical Training</h3>
-                <p>Networking, cybersecurity, coding, and cloud computing built for practical impact.</p>
-                <ul>
-                  <li>Networking</li>
-                  <li>Cybersecurity</li>
-                  <li>Coding</li>
-                  <li>Cloud Computing</li>
-                </ul>
-              </article>
-
-              <article class="service-card">
-                <span class="service-card__icon service-card__icon--navy" aria-hidden="true">
-                  <svg viewBox="0 0 24 24">
-                    <path d="M7 3h10v2H7V3Zm-3 4h16v12H4V7Zm2 2v8h12V9H6Zm2 2h8v2H8v-2Zm0 3h5v2H8v-2Z" />
-                  </svg>
-                </span>
-                <h3>Workforce Readiness</h3>
-                <p>Soft skills, CV writing, and financial literacy for a stronger professional pathway.</p>
-                <ul>
-                  <li>Soft skills</li>
-                  <li>CV writing</li>
-                  <li>Financial literacy</li>
-                </ul>
-              </article>
-
-              <article class="service-card">
-                <span class="service-card__icon service-card__icon--light" aria-hidden="true">
-                  <svg viewBox="0 0 24 24">
-                    <path
-                      d="M12 2a7 7 0 0 0-7 7v2H3v2h2v2a7 7 0 0 0 14 0v-2h2v-2h-2V9a7 7 0 0 0-7-7Zm0 2a5 5 0 0 1 5 5v2H7V9a5 5 0 0 1 5-5Zm-5 9h10v2a5 5 0 0 1-10 0v-2Z" />
-                  </svg>
-                </span>
-                <h3>E-Government Access</h3>
-                <p>Public digital services and online applications delivered in a trusted environment.</p>
-                <ul>
-                  <li>Public digital services</li>
-                  <li>Online applications</li>
-                </ul>
-              </article>
-
-              <article class="service-card">
-                <span class="service-card__icon service-card__icon--gold" aria-hidden="true">
-                  <svg viewBox="0 0 24 24">
-                    <path d="M4 5h16v12H4V5Zm2 2v8h12V7H6Zm1 10h10v2H7v-2Zm2-7 3 3 5-5 1.4 1.4L12 15.8 8 11.8 9 10Z" />
-                  </svg>
-                </span>
-                <h3>Business Support</h3>
-                <p>Digital marketing, SME consulting, and e-commerce onboarding for growth-ready enterprises.</p>
-                <ul>
-                  <li>Digital marketing</li>
-                  <li>SME consulting</li>
-                  <li>E-commerce onboarding</li>
-                </ul>
-              </article>
-            </div>
-          </div>
-
-          <aside class="why-card" id="innovation-hub">
-            <div class="section-heading">
-              <span class="eyebrow eyebrow--dark">WHY CHOOSE US</span>
-              <h2>Why Choose Mfano Africa ICT Hub?</h2>
-            </div>
-
-            <div class="why-list">
-              <article class="why-item">
-                <span class="why-item__icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24">
-                    <path d="m10 15.17 9.18-9.18 1.41 1.41L10 18 3.41 11.41l1.41-1.41L10 15.17Z" />
-                  </svg>
-                </span>
-                <div>
-                  <h3>Empowerment</h3>
-                  <p>We provide accessible pathways for people to build confidence, capability, and long-term relevance
-                    in a digital economy.</p>
-                </div>
-              </article>
-
-              <article class="why-item">
-                <span class="why-item__icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24">
-                    <path d="M4 12h16v2H4v-2Zm2-5h12v2H6V7Zm0 10h12v2H6v-2Z" />
-                  </svg>
-                </span>
-                <div>
-                  <h3>Decentralization</h3>
-                  <p>Our model brings digital opportunity closer to communities that are often underserved by
-                    traditional infrastructure.</p>
-                </div>
-              </article>
-
-              <article class="why-item">
-                <span class="why-item__icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24">
-                    <path d="M4 12h16v2H4v-2Zm0-5h8v2H4V7Zm0 10h12v2H4v-2Z" />
-                  </svg>
-                </span>
-                <div>
-                  <h3>Job Creation</h3>
-                  <p>Skills development, employability, and enterprise support combine to unlock new opportunities for
-                    work and income.</p>
-                </div>
-              </article>
-
-              <article class="why-item">
-                <span class="why-item__icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24">
-                    <path d="M12 2 9.2 8.1 3 9l4.5 4.4-1.1 6.1 5.6-3 5.6 3-1.1-6.1L21 9l-6.2-.9L12 2Z" />
-                  </svg>
-                </span>
-                <div>
-                  <h3>Innovation</h3>
-                  <p>We support experimentation, collaboration, and practical solutions that can scale across
-                    institutions and communities.</p>
-                </div>
-              </article>
-            </div>
-          </aside>
-        </div>
-      </section>
-
-
-      <section class="cta-banner section" id="events">
-        <div class="container cta-banner__inner">
-          <div class="cta-banner__copy">
-            <span class="eyebrow">COMMUNITY GROWTH</span>
-            <h2>
-              Are you looking to set up an ICT hub, or do you want to enroll in an existing hub's program?
-            </h2>
-            <p>
-              Start with a clear pathway into digital skills, enterprise support, and institutional collaboration.
+    <!-- ABOUT TEASER -->
+    <section id="about">
+        <div class="about-content reveal text-center m-auto">
+            <div class="section-label">About Us</div>
+            <h2 class="section-title">Who We <span class="text-cyan">Are</span></h2>
+            <p class="section-sub">
+                Mfano Africa ICT Hub is Kenya's leading technology training and innovation centre.
+                Founded to bridge the digital skills gap, we offer world-class ICT education,
+                mentorship, and a vibrant innovation ecosystem for the next generation of African tech leaders.
             </p>
-          </div>
+            <div class="mt-2">
+                <a href="./about.html" class="btn-primary">Learn Our Story</a>
+            </div>
+        </div>
+    </section>
 
-          <div class="cta-banner__action">
-            <div class="cta-banner__art" aria-hidden="true">
-              <div class="laptop">
-                <div class="laptop__screen">
-                  <span></span>
-                  <span></span>
-                  <span></span>
+    <!-- SERVICES TEASER -->
+    <section id="services">
+        <div class="services-header reveal text-center">
+            <div class="section-label">What We Offer</div>
+            <h2 class="section-title">Our <span class="text-cyan">Services</span></h2>
+            <p class="section-sub">From foundational computer training to advanced cybersecurity — we have everything
+                you need to thrive in the digital economy.</p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card sc-1 reveal">
+                <div class="service-img-wrap">
+                    <img src="/images/service-computer-training.png" alt="Computer Training" class="card-img">
                 </div>
-                <div class="laptop__base"></div>
-              </div>
+                <div class="service-icon bg-cyan-soft"><svg class="lucide-monitor icon-large" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <rect width="20" height="14" x="2" y="3" rx="2"></rect>
+                        <path d="M12 17v4M4 21h16"></path>
+                    </svg></div>
+                <h3>Computer Training</h3>
+                <p>Foundational computer skills for all levels.</p>
             </div>
-            <a class="button button--primary button--dark" href="#contact">Get Started Today</a>
-          </div>
-        </div>
-      </section>
-
-
-      <footer class="site-footer" id="contact">
-        <div class="container footer-grid">
-          <div class="footer-brand">
-            <a class="brand brand--footer" href="#home" aria-label="Mfano Bora Africa ICT Hub home">
-              <span class="brand__mark" aria-hidden="true">
-                <img class="brand__mark-image" src="/mfano-bora-africa.png" alt="" />
-              </span>
-              <span class="brand__text">
-                <strong>Mfano Bora</strong>
-                <span>Africa ICT Hub</span>
-              </span>
-            </a>
-            <p>
-              A professional digital transformation center supporting learning, enterprise readiness, and community
-              innovation across Africa.
-            </p>
-          </div>
-
-          <div>
-            <h3>Contact Info</h3>
-            <ul class="footer-list">
-              <li>Address: Mfano Bora Campus, Digital Innovation District</li>
-              <li>Email: info@mfanoboraict.org</li>
-            </ul>
-            <div class="social-links" aria-label="Social media links">
-              <a href="#" aria-label="Facebook">
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M14 9h2V6h-2c-2.2 0-4 1.8-4 4v2H8v3h2v7h3v-7h2.3l.7-3H13v-2c0-.6.4-1 1-1Z" />
-                </svg>
-              </a>
-              <a href="#" aria-label="X">
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="m18.6 3 1.9 3h-2.1L12 9.9 7 3H2.4l6.4 8.7L2 21h2.1l6.5-6.4L13 21h4.6l-6.9-9.4L22 3h-3.4Z" />
-                </svg>
-              </a>
-              <a href="#" aria-label="LinkedIn">
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path
-                    d="M6.5 6.8a1.7 1.7 0 1 1 0-3.4 1.7 1.7 0 0 1 0 3.4ZM5 9h3v12H5V9Zm5 0h2.8v1.6h.1c.4-.8 1.5-1.9 3.2-1.9 3.4 0 4 2.2 4 5.1V21h-3v-6.4c0-1.5 0-3.4-2.1-3.4s-2.4 1.6-2.4 3.3V21H10V9Z" />
-                </svg>
-              </a>
+            <div class="service-card sc-2 reveal">
+                <div class="service-img-wrap">
+                    <img src="/images/service-cybersecurity.png" alt="Cybersecurity" class="card-img">
+                </div>
+                <div class="service-icon bg-gold-soft"><svg class="lucide-lock icon-large" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
+                        <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                    </svg></div>
+                <h3>Cybersecurity</h3>
+                <p>Protect yourself and your organization.</p>
             </div>
-          </div>
-
-          <div>
-            <h3>Operating Hours</h3>
-            <ul class="footer-list">
-              <li>Monday - Friday: 8:00 AM - 6:00 PM</li>
-              <li>Saturday: 9:00 AM - 2:00 PM</li>
-              <li>Sunday: Closed</li>
-            </ul>
-          </div>
-
-          <div>
-            <h3>Services</h3>
-            <ul class="footer-links">
-              <li><a href="#services">Technical Training</a></li>
-              <li><a href="#services">Workforce Readiness</a></li>
-              <li><a href="#services">E-Government Access</a></li>
-              <li><a href="#services">Business Support</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <h3>Quick Links</h3>
-            <ul class="footer-links">
-              <li><a href="#home">Home</a></li>
-              <li><a href="#innovation-hub">Innovation Hub</a></li>
-              <li><a href="#events">Events</a></li>
-              <li><a href="#contact">Contact Us</a></li>
-            </ul>
-          </div>
+            <div class="service-card sc-3 reveal">
+                <div class="service-img-wrap">
+                    <img src="/images/service-web-dev.png" alt="Web Development" class="card-img">
+                </div>
+                <div class="service-icon bg-purple-soft"><svg class="lucide-globe icon-large" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path
+                            d="M12 2a14.5 14.5 0 0 1 0 20M12 2a14.5 14.5 0 0 0 0 20M2 12h20M12 2c4.97 0 9 3.582 9 8s-4.03 8-9 8-9-3.582-9-8 4.03-8 9-8z">
+                        </path>
+                    </svg></div>
+                <h3>Web Development</h3>
+                <p>Build beautiful, functional websites.</p>
+            </div>
         </div>
 
-        <div class="container footer-bottom">
-          <p>© <span id="current-year"></span> Mfano Bora Africa ICT Hub. All rights reserved.</p>
+        <div class="mt-4 text-center reveal">
+            <a href="./services.html" class="btn-primary">View All Services →</a>
         </div>
-      </footer>
-  </div>
+    </section>
 
-  <script type="module" src="/src/main.js"></script>
+    <!-- COURSES TEASER -->
+    <section id="courses">
+        <div class="reveal m-auto text-center max-w-1200">
+            <div class="section-label">Programs</div>
+            <h2 class="section-title">Featured <span class="text-cyan">Courses</span></h2>
+            
+            <div class="courses-grid">
+                <!-- 1. Computer Basics (Beginner) -->
+                <div class="course-card reveal">
+                    <img src="/images/course-computer-basics.png" alt="Computer Basics" class="course-banner-img">
+                    <div class="course-body">
+                        <span class="course-tag tag-beginner">Beginner</span>
+                        <h3>Computer Basics & MS Office</h3>
+                        <p>Learn typing, Windows, Word, Excel, and PowerPoint from absolute scratch.</p>
+                        <div class="course-meta">
+                            <span class="course-meta-item"><svg class="lucide-clock icon-small v-middle mr-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> 4 Weeks</span>
+                        </div>
+                    </div>
+                    <div class="course-footer">
+                        <a href="./contact.html" class="enroll-btn">Enroll →</a>
+                    </div>
+                </div>
+
+                <!-- 2. Foundational Digital Literacy (Beginner) -->
+                <div class="course-card reveal">
+                    <img src="/images/course-digital-literacy.png" alt="Digital Literacy" class="course-banner-img">
+                    <div class="course-body">
+                        <span class="course-tag tag-beginner">Beginner</span>
+                        <h3>Foundational Digital Literacy</h3>
+                        <p>MS Office mastery, Adobe tools for digital assets, and freelancing training.</p>
+                        <div class="course-meta">
+                            <span class="course-meta-item"><svg class="lucide-clock icon-small v-middle mr-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> 12 Weeks</span>
+                        </div>
+                    </div>
+                    <div class="course-footer">
+                        <a href="./contact.html" class="enroll-btn">Enroll →</a>
+                    </div>
+                </div>
+
+                <!-- 3. Creative & Front-End (Intermediate) -->
+                <div class="course-card reveal">
+                    <img src="/images/course-frontend-dev.png" alt="Front-End Web Development" class="course-banner-img">
+                    <div class="course-body">
+                        <span class="course-tag tag-intermediate">Intermediate</span>
+                        <h3>Creative & Front-End Web Technologies</h3>
+                        <p>HTML, CSS, JavaScript, and CMS tools. Design interfaces and build mobile apps.</p>
+                        <div class="course-meta">
+                            <span class="course-meta-item"><svg class="lucide-clock icon-small v-middle mr-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> 8 Weeks</span>
+                        </div>
+                    </div>
+                    <div class="course-footer">
+                        <a href="./contact.html" class="enroll-btn">Enroll →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-4 text-center reveal">
+                <a href="./courses.html" class="btn-primary">View All Courses →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US + STATS -->
+    <section id="why">
+        <div class="reveal">
+            <div class="section-label">Why Us</div>
+            <h2 class="section-title">Why Choose <span class="text-cyan">Mfano Africa ICT Hub</span>?</h2>
+        </div>
+
+        <div class="why-grid">
+            <div class="why-reasons reveal">
+                <div class="why-item">
+                    <div class="why-num">01</div>
+                    <div class="why-content">
+                        <h4>Experienced Industry Trainers</h4>
+                        <p>Every instructor is a certified professional with 5+ years of real-world industry experience,
+                            ensuring relevant, up-to-date teaching.</p>
+                    </div>
+                </div>
+                <div class="why-item">
+                    <div class="why-num">02</div>
+                    <div class="why-content">
+                        <h4>Hands-On Practical Learning</h4>
+                        <p>80% of our curriculum is practical. You build real projects, solve real problems, and leave
+                            with a portfolio that impresses employers.</p>
+                    </div>
+                </div>
+                <div class="why-item">
+                    <div class="why-num">03</div>
+                    <div class="why-content">
+                        <h4>Recognized Certifications</h4>
+                        <p>Our certificates are recognized by leading tech companies, universities, and government
+                            institutions across Kenya and East Africa.</p>
+                    </div>
+                </div>
+                <div class="why-item">
+                    <div class="why-num">04</div>
+                    <div class="why-content">
+                        <h4>Innovation & Startup Support</h4>
+                        <p>Access mentorship, funding connections, and our innovation lab to turn your tech idea into a
+                            real business.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats-display reveal">
+                <div class="big-stat">
+                    <span class="big-num">500<span class="plus">+</span></span>
+                    <p>Students Trained</p>
+                </div>
+                <div class="big-stat">
+                    <span class="big-num">50<span class="plus">+</span></span>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="big-stat">
+                    <span class="big-num">10<span class="plus">+</span></span>
+                    <p>ICT Programs</p>
+                </div>
+                <div class="big-stat">
+                    <span class="big-num">95<span class="plus">%</span></span>
+                    <p>Graduate Success Rate</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio">
+        <div class="reveal">
+            <div class="section-label">Our Work</div>
+            <h2 class="section-title">Student <span class="text-cyan">Portfolio</span></h2>
+            <p class="section-sub">Real projects built by real students. These are the results of practical, hands-on
+                training.</p>
+        </div>
+
+        <div class="portfolio-grid">
+            <div class="portfolio-item reveal">
+                <div class="pi-preview">
+                    <img src="https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=800" alt="E-Commerce Platform" class="portfolio-img">
+                </div>
+                <div class="pi-body">
+                    <div class="pi-type">Web Development</div>
+                    <h4>E-Commerce Platform</h4>
+                    <p>A full-stack marketplace built by Cohort 10 students using React and Node.js, serving local
+                        farmers.</p>
+                    <div class="pi-tags">
+                        <span class="pi-tag">React</span>
+                        <span class="pi-tag">Node.js</span>
+                        <span class="pi-tag">MongoDB</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item reveal">
+                <div class="pi-preview">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800" alt="Nairobi Traffic Dashboard" class="portfolio-img">
+                </div>
+                <div class="pi-body">
+                    <div class="pi-type">Data Analytics</div>
+                    <h4>Nairobi Traffic Dashboard</h4>
+                    <p>Real-time traffic analytics tool built with Python and Power BI to help urban planners.</p>
+                    <div class="pi-tags">
+                        <span class="pi-tag">Python</span>
+                        <span class="pi-tag">Power BI</span>
+                        <span class="pi-tag">API</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item reveal">
+                <div class="pi-preview">
+                    <img src="https://images.unsplash.com/photo-1595079676339-1534802ad6cf?q=80&w=800" alt="Farmer Connect App" class="portfolio-img">
+                </div>
+                <div class="pi-body">
+                    <div class="pi-type">Mobile App</div>
+                    <h4>Farmer Connect App</h4>
+                    <p>Android app connecting smallholder farmers to markets and agricultural extension services.</p>
+                    <div class="pi-tags">
+                        <span class="pi-tag">Flutter</span>
+                        <span class="pi-tag">Firebase</span>
+                        <span class="pi-tag">GIS</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item reveal">
+                <div class="pi-preview">
+                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc51?q=80&w=800" alt="Network Intrusion Detector" class="portfolio-img">
+                </div>
+                <div class="pi-body">
+                    <div class="pi-type">Cybersecurity</div>
+                    <h4>Network Intrusion Detector</h4>
+                    <p>AI-powered network monitoring tool capable of detecting and logging suspicious activity.</p>
+                    <div class="pi-tags">
+                        <span class="pi-tag">Python</span>
+                        <span class="pi-tag">ML</span>
+                        <span class="pi-tag">Network</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item reveal">
+                <div class="pi-preview">
+                    <img src="https://images.unsplash.com/photo-1576091160550-2173bdd99625?q=80&w=800" alt="Health Records System" class="portfolio-img">
+                </div>
+                <div class="pi-body">
+                    <div class="pi-type">Community Tech</div>
+                    <h4>Health Records System</h4>
+                    <p>Digital health records management system deployed in 3 community health centres in Nairobi.</p>
+                    <div class="pi-tags">
+                        <span class="pi-tag">PHP</span>
+                        <span class="pi-tag">MySQL</span>
+                        <span class="pi-tag">Bootstrap</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item reveal">
+                <div class="pi-preview">
+                    <img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?q=80&w=800" alt="E-Learning Portal" class="portfolio-img">
+                </div>
+                <div class="pi-body">
+                    <div class="pi-type">EdTech</div>
+                    <h4>E-Learning Portal</h4>
+                    <p>Online learning management system for secondary schools with video lessons and quizzes.</p>
+                    <div class="pi-tags">
+                        <span class="pi-tag">Vue.js</span>
+                        <span class="pi-tag">Laravel</span>
+                        <span class="pi-tag">AWS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+
+
+    <!-- BLOG -->
+    <section id="blog">
+        <div class="reveal">
+            <div class="section-label">News & Tips</div>
+            <h2 class="section-title">Latest From <span class="text-cyan">The Hub</span></h2>
+        </div>
+
+        <div class="blog-grid">
+            <div class="blog-card reveal">
+                <div class="blog-banner bg-gradient-dark"><svg class="lucide-lightbulb icon-xl inline-block"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path
+                            d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1.3.5 2.6 1.5 3.5.8.8 1.3 1.5 1.5 2.5">
+                        </path>
+                        <path d="M9 18h6"></path>
+                        <path d="M10 22h4"></path>
+                    </svg></div>
+                <div class="blog-body">
+                    <div class="blog-cat">ICT Tips</div>
+                    <h3>5 Free Tools Every Aspiring Developer Must Know in 2025</h3>
+                    <p>Level up your coding workflow with these essential free tools trusted by professional developers
+                        worldwide.</p>
+                </div>
+                <div class="blog-footer">
+                    <span>May 8, 2025</span>
+                    <a href="#" class="read-more">Read More →</a>
+                </div>
+            </div>
+
+            <div class="blog-card reveal">
+                <div class="blog-banner bg-gradient-emerald"><svg class="lucide-award icon-xl inline-block"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="9" r="6"></circle>
+                        <path d="M12 15v7M8 22h8"></path>
+                    </svg></div>
+                <div class="blog-body">
+                    <div class="blog-cat">Success Story</div>
+                    <h3>How Wanjiru Went From Housewife to Senior UX Designer in 8 Months</h3>
+                    <p>An inspiring journey of determination, skill-building, and how Mfanabora's programs made it
+                        possible.</p>
+                </div>
+                <div class="blog-footer">
+                    <span>Apr 22, 2025</span>
+                    <a href="#" class="read-more">Read More →</a>
+                </div>
+            </div>
+
+            <div class="blog-card reveal">
+                <div class="blog-banner bg-gradient-violet"><svg class="lucide-newspaper icon-xl opacity-50"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path
+                            d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2">
+                        </path>
+                        <path d="M18 14h-8"></path>
+                        <path d="M15 18h-5"></path>
+                        <path d="M10 6h8v4h-8V6Z"></path>
+                    </svg></div>
+                <div class="blog-body">
+                    <div class="blog-cat">Tech News</div>
+                    <h3>AI Is Changing Jobs in Kenya — Here's How to Stay Ahead</h3>
+                    <p>What the artificial intelligence revolution means for Kenyan workers, and the skills you need to
+                        remain relevant.</p>
+                </div>
+                <div class="blog-footer">
+                    <span>Apr 15, 2025</span>
+                    <a href="#" class="read-more">Read More →</a>
+                </div>
+            </div>
+
+            <div class="blog-card reveal">
+                <div class="blog-banner bg-gradient-brown"><svg class="lucide-calendar icon-xl opacity-50"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect>
+                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg></div>
+                <div class="blog-body">
+                    <div class="blog-cat">Events</div>
+                    <h3>Mfano BoraHackathon 2025 — Applications Now Open!</h3>
+                    <p>Join 200+ students and developers for a 48-hour innovation sprint. Cash prizes and mentorship up
+                        for grabs.</p>
+                </div>
+                <div class="blog-footer">
+                    <span>Mar 30, 2025</span>
+                    <a href="#" class="read-more">Read More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT TEASER -->
+    <section id="contact">
+
+        <div class="contact-details">
+            <div class="contact-item">
+                <div class="ci-icon"><svg class="lucide-phone icon-large" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                        </path>
+                    </svg></div>
+                <div>
+                    <div class="ci-label">Phone</div>
+                    <div class="ci-value">+254 700 000 000</div>
+                </div>
+            </div>
+            <div class="contact-item">
+                <div class="ci-icon"><svg class="lucide-mail icon-large" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                    </svg></div>
+                <div>
+                    <div class="ci-label">Email</div>
+                    <div class="ci-value">info@mfanaboraict.co.ke</div>
+                </div>
+            </div>
+            <div class="contact-item">
+                <div class="ci-icon"><svg class="lucide-map-pin icon-large" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                    </svg></div>
+                <div>
+                    <div class="ci-label">Location</div>
+                    <div class="ci-value">Mfano House, Ole Sein Rd, Nairobi, Kenya</div>
+                </div>
+            </div>
+            <div class="contact-item">
+                <div class="ci-icon"><svg class="lucide-clock icon-large" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="9"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg></div>
+                <div>
+                    <div class="ci-label">Hours</div>
+                    <div class="ci-value">Mon–Fri: 7AM–5PM | Sat: 8AM–1PM</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-links">
+            <a class="social-btn" title="Facebook"><svg class="lucide-facebook icon-med" viewBox="0 0 24 24"
+                    fill="currentColor">
+                    <path d="M18 2h-3a6 6 0 0 0-6 6v3H7v4h2v8h4v-8h3l1-4h-4V8a1 1 0 0 1 1-1h3z"></path>
+                </svg></a>
+            <a class="social-btn" title="X"><svg class="icon-med" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932 6.064-6.932zm-1.292 19.49h2.039L6.486 3.24H4.298l13.311 17.403z">
+                    </path>
+                </svg></a>
+            <a class="social-btn" title="Instagram"><svg class="lucide-instagram icon-med" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <circle cx="17.5" cy="6.5" r="1.5"></circle>
+                </svg></a>
+            <a class="social-btn" title="LinkedIn"><svg class="lucide-linkedin icon-med" viewBox="0 0 24 24"
+                    fill="currentColor">
+                    <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                    </path>
+                    <circle cx="4" cy="4" r="2"></circle>
+                </svg></a>
+            <a class="social-btn" title="YouTube"><svg class="lucide-play-circle icon-med" viewBox="0 0 24 24"
+                    fill="currentColor">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                </svg></a>
+            <a class="social-btn" title="WhatsApp"><svg class="lucide-message-circle icon-med" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg></a>
+        </div>
+        </div>
+
+        <div class="contact-form-wrap reveal">
+            <h4 class="form-title">Send Us a Message</h4>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="John Kamau">
+                </div>
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="john@email.com">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="tel" placeholder="+254 700 000 000">
+                </div>
+                <div class="form-group">
+                    <label>Interested In</label>
+                    <select>
+                        <option value="">Select a Course</option>
+                        <option>Web Development</option>
+                        <option>Cybersecurity</option>
+                        <option>Graphic Design</option>
+                        <option>Digital Marketing</option>
+
+                        <option>Computer Packages</option>
+                        <option>ICT Consultancy</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Message</label>
+                <textarea placeholder="Tell us about yourself or ask any questions..."></textarea>
+            </div>
+
+            <button class="form-submit" onclick="handleSubmit(this)">
+                <svg class="lucide-send icon-med" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M22 4 11 15"></path>
+                    <path d="m22 4-7 12-4-6"></path>
+                </svg> Send Message
+            </button>
+        </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="./index.html" class="nav-logo">
+                    <img src="/favicon.ico" alt="Mfano Bora Logo" class="icon-logo">
+                    <span class="logo-text">Mfano Africa <span>ICT Hub</span></span>
+                </a>
+                <p>Kenya's leading ICT Hub empowering the next generation of African tech professionals through
+                    world-class training, innovation, and mentorship.</p>
+                <div class="social-links">
+                    <a class="social-btn" title="Facebook"><svg class="lucide-facebook icon-med" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path d="M18 2h-3a6 6 0 0 0-6 6v3H7v4h2v8h4v-8h3l1-4h-4V8a1 1 0 0 1 1-1h3z"></path>
+                        </svg></a>
+                    <a class="social-btn" title="X"><svg class="icon-med" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932 6.064-6.932zm-1.292 19.49h2.039L6.486 3.24H4.298l13.311 17.403z">
+                            </path>
+                        </svg></a>
+                    <a class="social-btn" title="Instagram"><svg class="lucide-instagram icon-med" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <circle cx="17.5" cy="6.5" r="1.5"></circle>
+                        </svg></a>
+                    <a class="social-btn" title="LinkedIn"><svg class="lucide-linkedin icon-med" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                            </path>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./services.html">Our Services</a></li>
+                    <li><a href="./courses.html">Courses</a></li>
+                    <li><a href="./portfolio.html">Portfolio</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h5>Programs</h5>
+                <ul>
+                    <li><a href="./courses.html">Digital Literacy</a></li>
+                    <li><a href="./courses.html">Web Technologies</a></li>
+                    <li><a href="./courses.html">Graphic Design</a></li>
+                    <li><a href="./courses.html">Digital Business</a></li>
+                    <li><a href="./courses.html">Computer Basics</a></li>
+                    <li><a href="./courses.html">Technical Skills</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h5>Contact</h5>
+                <ul>
+                    <li><a href="tel:+254700000000"><svg class="lucide-phone icon-small inline-block"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg> +254 700 000 000</a></li>
+                    <li><a href="mailto:info@mfanoboraafrica.com"><svg class="lucide-mail icon-small inline-block"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                            </svg> info@mfanoboraafrica.com</a></li>
+                    <li><a href="./contact.html"><svg class="lucide-map-pin icon-small inline-block" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg> Mfano House, Ole Sein Rd, Nairobi, Kenya</a></li>
+                    <li><a href="./contact.html"><svg class="lucide-clock icon-small inline-block" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="9"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg> Mon–Fri: 7AM–5PM | Sat: 8AM–1PM</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© <span id="current-year">2025</span> <span>Mfano Africa ICT Hub</span>. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Sitemap</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./src/main.js"></script>
 </body>
 
 </html>

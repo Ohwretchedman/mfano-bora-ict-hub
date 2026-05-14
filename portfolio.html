@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Mfano Africa ICT Hub</title>
+    <script src="https://cdn.jsdelivr.net/npm/lucide@latest"></script>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="./index.html" class="nav-logo">
+            <img src="/favicon.ico" alt="Mfano Bora Logo" class="icon-nav">
+            <span class="logo-text">Mfano Africa <span>ICT Hub</span></span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./courses.html">Courses</a></li>
+            <li><a href="./portfolio.html" class="active">Portfolio</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./contact.html" class="nav-cta">Get In Touch</a></li>
+        </ul>
+        <button class="hamburger" onclick="toggleMobileMenu()">☰</button>
+    </nav>
+
+    <!-- PORTFOLIO HERO -->
+    <section class="pt-hero">
+        <div class="reveal text-center">
+            <div class="section-label">Our Work</div>
+            <h2 class="section-title">Student <span class="text-cyan">Portfolio</span></h2>
+            <p class="section-sub">Showcasing the incredible projects built by our students during their training.</p>
+        </div>
+
+        <div class="portfolio-grid">
+            <div class="portfolio-item reveal">
+                <div class="pi-preview">
+                    <img src="https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=800" alt="E-Commerce Platform" class="portfolio-img">
+                </div>
+                <div class="pi-body">
+                    <div class="pi-type">Web Development</div>
+                    <h4>E-Commerce Platform</h4>
+                    <p>A full-stack marketplace built by Cohort 10 students using React and Node.js.</p>
+                    <div class="pi-tags">
+                        <span class="pi-tag">React</span>
+                        <span class="pi-tag">Node.js</span>
+                        <span class="pi-tag">MongoDB</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item reveal">
+                <div class="pi-preview">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800" alt="Nairobi Traffic Dashboard" class="portfolio-img">
+                </div>
+                <div class="pi-body">
+                    <div class="pi-type">Data Analytics</div>
+                    <h4>Nairobi Traffic Dashboard</h4>
+                    <p>Real-time traffic analytics tool built with Python and Power BI to help urban planners.</p>
+                    <div class="pi-tags">
+                        <span class="pi-tag">Python</span>
+                        <span class="pi-tag">Power BI</span>
+                        <span class="pi-tag">API</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item reveal">
+                <div class="pi-preview">
+                    <img src="https://images.unsplash.com/photo-1595079676339-1534802ad6cf?q=80&w=800" alt="Farmer Connect App" class="portfolio-img">
+                </div>
+                <div class="pi-body">
+                    <div class="pi-type">Mobile App</div>
+                    <h4>Farmer Connect App</h4>
+                    <p>Android app connecting smallholder farmers to markets and extension services.</p>
+                    <div class="pi-tags">
+                        <span class="pi-tag">Flutter</span>
+                        <span class="pi-tag">Firebase</span>
+                        <span class="pi-tag">GIS</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item reveal">
+                <div class="pi-preview">
+                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc51?q=80&w=800" alt="Intrusion Detection System" class="portfolio-img">
+                </div>
+                <div class="pi-body">
+                    <div class="pi-type">Cybersecurity</div>
+                    <h4>Intrusion Detection System</h4>
+                    <p>AI-powered network monitoring tool capable of detecting suspicious activity.</p>
+                    <div class="pi-tags">
+                        <span class="pi-tag">Python</span>
+                        <span class="pi-tag">ML</span>
+                        <span class="pi-tag">Network</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item reveal">
+                <div class="pi-preview">
+                    <img src="https://images.unsplash.com/photo-1576091160550-2173bdd99625?q=80&w=800" alt="Health Records System" class="portfolio-img">
+                </div>
+                <div class="pi-body">
+                    <div class="pi-type">Community Tech</div>
+                    <h4>Health Records System</h4>
+                    <p>Digital health records management system deployed in community health centres.</p>
+                    <div class="pi-tags">
+                        <span class="pi-tag">PHP</span>
+                        <span class="pi-tag">MySQL</span>
+                        <span class="pi-tag">Bootstrap</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item reveal">
+                <div class="pi-preview">
+                    <img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?q=80&w=800" alt="E-Learning Portal" class="portfolio-img">
+                </div>
+                <div class="pi-body">
+                    <div class="pi-type">EdTech</div>
+                    <h4>E-Learning Portal</h4>
+                    <p>Online learning management system for secondary schools with video lessons.</p>
+                    <div class="pi-tags">
+                        <span class="pi-tag">Vue.js</span>
+                        <span class="pi-tag">Laravel</span>
+                        <span class="pi-tag">AWS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- FOOTER -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="./index.html" class="nav-logo">
+                    <img src="/favicon.ico" alt="Mfano Bora Logo" class="icon-logo">
+                    <span class="logo-text">Mfano Africa <span>ICT Hub</span></span>
+                </a>
+                <p>Kenya's leading ICT Hub empowering the next generation of African tech professionals through
+                    world-class training, innovation, and mentorship.</p>
+                <div class="social-links">
+                    <a class="social-btn" title="Facebook"><svg class="lucide-facebook icon-med" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path d="M18 2h-3a6 6 0 0 0-6 6v3H7v4h2v8h4v-8h3l1-4h-4V8a1 1 0 0 1 1-1h3z"></path>
+                        </svg></a>
+                    <a class="social-btn" title="X"><svg class="icon-med" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932 6.064-6.932zm-1.292 19.49h2.039L6.486 3.24H4.298l13.311 17.403z"></path>
+                        </svg></a>
+                    <a class="social-btn" title="Instagram"><svg class="lucide-instagram icon-med" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <circle cx="17.5" cy="6.5" r="1.5"></circle>
+                        </svg></a>
+                    <a class="social-btn" title="LinkedIn"><svg class="lucide-linkedin icon-med" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                            </path>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./services.html">Our Services</a></li>
+                    <li><a href="./courses.html">Courses</a></li>
+                    <li><a href="./portfolio.html">Portfolio</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h5>Programs</h5>
+                <ul>
+                    <li><a href="./courses.html">Digital Literacy</a></li>
+                    <li><a href="./courses.html">Web Technologies</a></li>
+                    <li><a href="./courses.html">Graphic Design</a></li>
+                    <li><a href="./courses.html">Digital Business</a></li>
+                    <li><a href="./courses.html">Computer Basics</a></li>
+                    <li><a href="./courses.html">Technical Skills</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h5>Contact</h5>
+                <ul>
+                    <li><a href="tel:+254700000000"><svg class="lucide-phone icon-small inline-block" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg> +254 700 000 000</a></li>
+                    <li><a href="mailto:info@mfanoboraafrica.com"><svg class="lucide-mail icon-small inline-block" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                            </svg> info@mfanoboraafrica.com</a></li>
+                    <li><a href="./contact.html"><svg class="lucide-map-pin icon-small inline-block" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg> Mfano House, Ole Sein Rd, Nairobi, Kenya</a></li>
+                    <li><a href="./contact.html"><svg class="lucide-clock icon-small inline-block" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="9"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg> Mon–Fri: 7AM–5PM | Sat: 8AM–1PM</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© <span id="current-year">2025</span> <span>Mfano Africa ICT Hub</span>. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Sitemap</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./src/main.js"></script>
+</body>
+</html>

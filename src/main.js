@@ -1,100 +1,108 @@
-import './style.css'
-import localFaviconUrl from './assets/favicon.ico'
+document.addEventListener('DOMContentLoaded', () => {
+  // Initialize Lucide Icons
+  if (typeof lucide !== 'undefined') {
+    lucide.createIcons();
+  }
 
-const header = document.querySelector('.site-header')
-const menuToggle = document.querySelector('.menu-toggle')
-const navLinks = Array.from(document.querySelectorAll('.nav-link'))
-const yearNode = document.querySelector('#current-year')
-const localFaviconNode = document.querySelector('[data-local-favicon]')
+  // Set current year
+  const yearNode = document.querySelector('#current-year');
+  if (yearNode) {
+    yearNode.textContent = new Date().getFullYear().toString();
+  }
 
-if (yearNode) {
-  yearNode.textContent = new Date().getFullYear().toString()
-}
-
-if (localFaviconNode) {
-  localFaviconNode.src = localFaviconUrl
-}
-
-
-if (menuToggle && header) {
-  menuToggle.addEventListener('click', () => {
-    const isOpen = header.classList.toggle('nav-open')
-    menuToggle.setAttribute('aria-expanded', String(isOpen))
-  })
-}
-
-navLinks.forEach((link) => {
-  link.addEventListener('click', () => {
-    if (!header || !menuToggle) {
-      return
+  // Escape key to close mobile menu
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      const links = document.querySelector('.nav-links');
+      if (links && links.classList.contains('mobile-active')) {
+        links.classList.remove('mobile-active');
+      }
     }
+  });
 
-    header.classList.remove('nav-open')
-    menuToggle.setAttribute('aria-expanded', 'false')
-  })
-})
+  // Scroll reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('visible'), 60 * (i % 4));
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
 
-const updateHeaderState = () => {
-  if (!header) {
-    return
+  revealEls.forEach(el => observer.observe(el));
+
+  // Smooth nav background
+  const nav = document.querySelector('nav');
+  if (nav) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 60) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    });
   }
 
-  header.classList.toggle('is-scrolled', window.scrollY > 12)
-}
+  // Mobile menu toggle
+  window.toggleMobileMenu = function() {
+    const links = document.querySelector('.nav-links');
+    if (!links) return;
+    links.classList.toggle('mobile-active');
+  };
 
-updateHeaderState()
-window.addEventListener('scroll', updateHeaderState, { passive: true })
+  // Close mobile menu on link click
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    a.addEventListener('click', () => {
+      const links = document.querySelector('.nav-links');
+      if (links) links.classList.remove('mobile-active');
+    });
+  });
 
-const sectionIds = ['home', 'services', 'innovation-hub', 'events', 'contact']
-const observedSections = sectionIds
-  .map((id) => document.getElementById(id))
-  .filter(Boolean)
-
-if (observedSections.length > 0 && 'IntersectionObserver' in window) {
-  const linkByHash = new Map(navLinks.map((link) => [link.getAttribute('href'), link]))
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) {
-          return
-        }
-
-        navLinks.forEach((link) => link.classList.remove('is-active'))
-        const activeLink = linkByHash.get(`#${entry.target.id}`)
-        if (activeLink) {
-          activeLink.classList.add('is-active')
-        }
-      })
-    },
-    {
-      root: null,
-      threshold: 0.5,
-      rootMargin: '-15% 0px -50% 0px',
-    },
-  )
-
-  observedSections.forEach((section) => observer.observe(section))
-}
-
-window.addEventListener('keydown', (event) => {
-  if (event.key !== 'Escape' || !header || !menuToggle) {
-    return
+  // Animate stat numbers
+  function animateCounter(el, target, suffix = '') {
+    let start = 0;
+    const duration = 1800;
+    const step = target / (duration / 16);
+    const timer = setInterval(() => {
+      start = Math.min(start + step, target);
+      if (el) {
+        el.innerHTML = Math.floor(start) + '<span>' + suffix + '</span>';
+      }
+      if (start >= target) clearInterval(timer);
+    }, 16);
   }
 
-  header.classList.remove('nav-open')
-  menuToggle.setAttribute('aria-expanded', 'false')
-  menuToggle.focus()
-})
+  const statsObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const stats = entry.target.querySelectorAll('.stat-num');
+        const data = [
+          { val: 500, suffix: '+' }, { val: 50, suffix: '+' },
+          { val: 10, suffix: '+' }, { val: 95, suffix: '%' }
+        ];
+        stats.forEach((stat, i) => {
+          if (data[i]) animateCounter(stat, data[i].val, data[i].suffix);
+        });
+        statsObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.3 });
 
+  const statsDisplay = document.querySelector('.hero-stats');
+  if (statsDisplay) statsObserver.observe(statsDisplay);
+});
 
-window.addEventListener('resize', () => {
-  if (!header || !menuToggle) {
-    return
-  }
-
-  if (window.innerWidth > 980) {
-    header.classList.remove('nav-open')
-    menuToggle.setAttribute('aria-expanded', 'false')
-  }
-})
+// Form submit (global for onclick)
+window.handleSubmit = function(btn) {
+  const originalText = btn.innerHTML;
+  btn.innerHTML = '<svg class="lucide-check icon-med inline-block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Message Sent! We\'ll be in touch soon.';
+  btn.classList.add('btn-success');
+  btn.disabled = true;
+  setTimeout(() => {
+    btn.innerHTML = originalText;
+    btn.classList.remove('btn-success');
+    btn.disabled = false;
+  }, 4000);
+};
