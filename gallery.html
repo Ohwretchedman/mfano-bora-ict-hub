@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Get in touch with Mfano Africa ICT Hub | visit us in Nairobi, call, email, or send a message through our contact form.">
+    <meta name="description" content="Browse photos from training sessions, workshops, and events at Mfano Africa ICT Hub.">
     <meta name="author" content="Mfano Africa ICT Hub">
     <meta name="robots" content="index, follow">
-    <meta property="og:title" content="Contact Us | Mfano Africa ICT Hub">
-    <meta property="og:description" content="Visit us in Nairobi, call, email, or send a message through our contact form.">
+    <meta property="og:title" content="Gallery | Mfano Africa ICT Hub">
+    <meta property="og:description" content="Visual moments from training sessions, mentorship activities, and community events.">
     <meta property="og:type" content="website">
-    <title>Contact Us | Mfano Africa ICT Hub</title>
+    <title>Gallery | Mfano Africa ICT Hub</title>
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <script src="https://cdn.jsdelivr.net/npm/lucide@latest"></script>
     <link rel="stylesheet" href="./src/style.css">
@@ -26,151 +26,101 @@
                     <span class="logo-subtitle">East Africa's Premier ICT Training Hub</span>
                 </div>
             </a>
-            
             <div class="nav-overlay"></div>
-            
                         <ul class="nav-links">
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./services.html">Services</a></li>
                 <li><a href="./attachments.html">Attachments</a></li>
                 <li><a href="./courses.html">Training Areas</a></li>
-                <li><a href="./gallery.html">Gallery</a></li>
+                <li><a href="./gallery.html" class="active">Gallery</a></li>
                 <li><a href="./testimonials.html">Testimonials</a></li>
                 <li><a href="./portfolio.html">Portfolio</a></li>
                 <li><a href="./blog.html">Blog</a></li>
-                <li><a href="./contact.html" class="nav-cta active">Get In Touch</a></li>
+                <li><a href="./contact.html" class="nav-cta">Get In Touch</a></li>
             </ul>
             <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
         </div>
     </nav>
 
-    <!-- CONTACT -->
-    <section id="contact" class="pt-hero">
-        <div class="reveal">
-            <div class="section-label">Contact Us</div>
-            <h2 class="section-title">Get in <span class="text-cyan">Touch</span></h2>
-            <p class="section-sub">Have questions about our courses or services? We're here to help. Reach out to us
-                anytime.</p>
+    <!-- GALLERY HERO -->
+    <section id="gallery-preview" class="pt-hero">
+        <div class="reveal text-center m-auto max-w-800">
+            <div class="section-label">Gallery</div>
+            <h1 class="section-title">Training & <span class="text-cyan">Event Moments</span></h1>
+            <p class="section-sub m-auto">A visual collection of learning sessions, mentorship activities, team collaboration, and hub events that reflect the energy of our ICT community.</p>
         </div>
 
-        <div class="contact-layout">
-            <div class="contact-info reveal">
-                <h3>Contact Information</h3>
-                <p>Visit us at our hub or reach out through any of these channels. We respond to all inquiries within
-                    24 hours.</p>
-
-                <div class="contact-details">
-                    <div class="contact-item">
-                        <div class="ci-icon"><svg class="lucide-phone icon-large" viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path
-                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
-                                </path>
-                            </svg></div>
-                        <div>
-                            <div class="ci-label">Phone</div>
-                            <div class="ci-value">+254 700 000 000</div>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="ci-icon"><svg class="lucide-mail" viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                class="icon-large">
-                                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
-                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-                            </svg></div>
-                        <div>
-                            <div class="ci-label">Email</div>
-                            <div class="ci-value">info@mfanoafricaicthub.com</div>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="ci-icon"><svg class="lucide-map-pin" viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                class="icon-large">
-                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                <circle cx="12" cy="10" r="3"></circle>
-                            </svg></div>
-                        <div>
-                            <div class="ci-label">Location</div>
-                            <div class="ci-value">Mfano House, Ole Sein Rd, Nairobi, Kenya</div>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="ci-icon"><svg class="lucide-clock" viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                class="icon-large">
-                                <circle cx="12" cy="12" r="9"></circle>
-                                <polyline points="12 6 12 12 16 14"></polyline>
-                            </svg></div>
-                        <div>
-                            <div class="ci-label">Hours</div>
-                            <div class="ci-value">Mon–Fri: 7AM–5PM | Sat: 8AM–1PM</div>
-                        </div>
-                    </div>
+        <div class="gallery-grid reveal">
+            <article class="gallery-card gallery-card-wide">
+                <img loading="lazy" src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80" alt="Learners attending a practical computer training session" class="gallery-photo">
+                <div class="gallery-overlay">
+                    <span class="gallery-tag">Training Session</span>
+                    <h3>Hands-On Digital Skills Class</h3>
+                    <p>Students practicing essential tools in a guided lab environment.</p>
                 </div>
-
-                <div class="social-links">
-                    <a href="#" class="social-btn" title="Facebook" target="_blank" rel="noopener noreferrer"><svg class="icon-med" viewBox="0 0 24 24" fill="currentColor"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg></a>
-                    <a href="#" class="social-btn" title="X" target="_blank" rel="noopener noreferrer"><svg class="icon-med" viewBox="0 0 24 24" fill="currentColor"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932 6.064-6.932zm-1.292 19.49h2.039L6.486 3.24H4.298l13.311 17.403z"/></svg></a>
-                    <a href="#" class="social-btn" title="Instagram" target="_blank" rel="noopener noreferrer"><svg class="icon-med" viewBox="0 0 448 512" fill="currentColor"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
-                    <a href="#" class="social-btn" title="LinkedIn" target="_blank" rel="noopener noreferrer"><svg class="icon-med" viewBox="0 0 448 512" fill="currentColor"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a>
+            </article>
+            <article class="gallery-card">
+                <img loading="lazy" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80" alt="Participants collaborating during a tech workshop" class="gallery-photo">
+                <div class="gallery-overlay">
+                    <span class="gallery-tag">Workshop</span>
+                    <h3>Peer Collaboration</h3>
                 </div>
-            </div>
-
-            <div class="contact-form-wrap reveal">
-                <h4 class="form-title">Send Us a Message</h4>
-
-                <form id="contact-form" novalidate>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="contact-name">Full Name</label>
-                        <input type="text" id="contact-name" placeholder="John Kamau" required autocomplete="name">
-                    </div>
-                    <div class="form-group">
-                        <label for="contact-email">Email Address</label>
-                        <input type="email" id="contact-email" placeholder="john@email.com" required autocomplete="email">
-                    </div>
+            </article>
+            <article class="gallery-card">
+                <img loading="lazy" src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=1200&q=80" alt="Innovation event with learners discussing ideas" class="gallery-photo">
+                <div class="gallery-overlay">
+                    <span class="gallery-tag">Innovation Event</span>
+                    <h3>Ideas Into Action</h3>
                 </div>
-
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="contact-phone">Phone Number</label>
-                        <input type="tel" id="contact-phone" placeholder="+254 700 000 000" autocomplete="tel">
-                    </div>
-                    <div class="form-group">
-                        <label for="contact-subject">Inquiry Type</label>
-                        <select id="contact-subject" title="Select inquiry type">
-                            <option value="">Select Inquiry Type</option>
-                            <option>General Inquiry</option>
-                            <option>Industrial Attachment / Internship</option>
-                            <option>Business & Corporate Consulting</option>
-                            <option>Startup & Innovation Lab Incubation</option>
-                            <option>Strategic Partnership</option>
-                            <option>Support & Feedback</option>
-                            <option>Other</option>
-                        </select>
-                    </div>
+            </article>
+            <article class="gallery-card">
+                <img loading="lazy" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80" alt="Web development training in progress" class="gallery-photo">
+                <div class="gallery-overlay">
+                    <span class="gallery-tag">Coding Class</span>
+                    <h3>Web Development Practice</h3>
                 </div>
-
-                <div class="form-group">
-                    <label for="contact-message">Message</label>
-                    <textarea id="contact-message" placeholder="Tell us about yourself or ask any questions..." required></textarea>
+            </article>
+            <article class="gallery-card">
+                <img loading="lazy" src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&q=80" alt="Mentorship session in progress" class="gallery-photo">
+                <div class="gallery-overlay">
+                    <span class="gallery-tag">Mentorship</span>
+                    <h3>One-on-One Guidance</h3>
                 </div>
-
-                <button type="submit" class="form-submit" onclick="handleSubmit(this)">
-                    <svg class="lucide-send icon-small v-middle mr-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <line x1="22" y1="2" x2="11" y2="13"></line>
-                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-                    </svg> Send Message
-                </button>
-                </form>
-            </div>
+            </article>
+            <article class="gallery-card gallery-card-wide">
+                <img loading="lazy" src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&q=80" alt="Group project presentation" class="gallery-photo">
+                <div class="gallery-overlay">
+                    <span class="gallery-tag">Presentations</span>
+                    <h3>Student Project Showcase</h3>
+                    <p>Cohort graduates presenting their capstone projects to industry mentors.</p>
+                </div>
+            </article>
+            <article class="gallery-card">
+                <img loading="lazy" src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80" alt="Team building activity" class="gallery-photo">
+                <div class="gallery-overlay">
+                    <span class="gallery-tag">Community</span>
+                    <h3>Team Building Day</h3>
+                </div>
+            </article>
+            <article class="gallery-card">
+                <img loading="lazy" src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1200&q=80" alt="Classroom learning session" class="gallery-photo">
+                <div class="gallery-overlay">
+                    <span class="gallery-tag">Classroom</span>
+                    <h3>Interactive Learning</h3>
+                </div>
+            </article>
+            <article class="gallery-card gallery-card-wide">
+                <img loading="lazy" src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80" alt="Hub workspace overview" class="gallery-photo">
+                <div class="gallery-overlay">
+                    <span class="gallery-tag">Our Space</span>
+                    <h3>The Innovation Hub</h3>
+                    <p>Our modern workspace designed for collaboration, creativity, and focused learning.</p>
+                </div>
+            </article>
         </div>
     </section>
 
-        <!-- FOOTER -->
+    <!-- FOOTER -->
             <footer>
         <div class="footer-grid">
             <div class="footer-brand">
