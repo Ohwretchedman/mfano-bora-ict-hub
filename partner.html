@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description"
-        content="Enroll today at Mfano Africa ICT Hub and launch your career in Software Development, Cybersecurity, Design, and more.">
+        content="Partner or invest in Mfano Africa ICT Hub. Collaborate with us on industrial attachments, academic programs, or corporate sponsorships.">
     <meta name="author" content="Mfano Africa ICT Hub">
     <meta name="robots" content="index, follow">
-    <meta property="og:title" content="Student Enrollment | Mfano Africa ICT Hub">
+    <meta property="og:title" content="Partner & Invest | Mfano Africa ICT Hub">
     <meta property="og:description"
-        content="Secure your spot in East Africa's premier ICT training programs. Register now.">
+        content="Join us in shaping the digital future of Africa. Explore investment, sponsorship, and attachment channels.">
     <meta property="og:type" content="website">
-    <title>Student Enrollment | Mfano Africa ICT Hub</title>
+    <title>Partner & Invest | Mfano Africa ICT Hub</title>
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <script src="https://cdn.jsdelivr.net/npm/lucide@latest"></script>
     <link rel="stylesheet" href="./src/style.css">
 </head>
 
@@ -48,157 +49,86 @@
         </div>
     </nav>
 
-    <!-- ENROLLMENT SECTION -->
+    <!-- HERO SECTION -->
     <section id="contact" class="pt-hero">
         <div class="reveal text-center m-auto enroll-header-wrap">
-            <div class="section-label">Student Portal</div>
-            <h2 class="section-title">Start Your <span class="text-cyan">Tech Journey Today</span></h2>
-            <p class="section-sub">Take the first step toward masterclass professional tech expertise. Fill out the
-                comprehensive form below to reserve your slot in your desired training track.</p>
+            <div class="section-label">Enterprise Portal</div>
+            <h2 class="section-title">Partner & <span class="text-cyan">Invest</span></h2>
+            <p class="section-sub">Co-build high-impact training cohorts, provide direct industrial attachments, or invest equity to accelerate Mfano's regional expansion.</p>
         </div>
 
         <div class="contact-layout enroll-layout-centered">
+            <!-- Form Block -->
             <div class="contact-form-wrap reveal">
-                <h4 class="form-title">Student Registration & Admission Form</h4>
-                <p class="enroll-form-desc">Please provide all the necessary information below. Our admissions registrar
-                    will review your application and reach out within 24 hours to confirm your timetable and admission
-                    details.</p>
+                <h4 class="form-title">Partnership & Investment Inquiry</h4>
+                <p class="enroll-form-desc">Provide your corporate background or investment parameters below. Our executive board will review your brief and contact you within 24 hours to schedule an introductory video consultation.</p>
 
-                <form id="enrollment-form" novalidate>
-                    <!-- Row 1: Personal Details -->
+                <form id="partner-form" novalidate>
+                    <!-- Row 1: Org Details -->
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="student-name">Full Name</label>
-                            <input type="text" id="student-name" placeholder="E.g., John Kamau" required
-                                autocomplete="name">
+                            <label for="org-name">Organization Name</label>
+                            <input type="text" id="org-name" placeholder="E.g., Mfano Tech Ltd" required autocomplete="organization">
                         </div>
                         <div class="form-group">
-                            <label for="student-email">Email Address</label>
-                            <input type="email" id="student-email" placeholder="john@example.com" required
-                                autocomplete="email">
+                            <label for="contact-name">Contact Person</label>
+                            <input type="text" id="contact-name" placeholder="E.g., Sarah Kamau" required autocomplete="name">
                         </div>
                     </div>
 
-                    <!-- Row 2: Phone & Education -->
+                    <!-- Row 2: Contact Info -->
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="student-phone">Phone Number</label>
-                            <input type="tel" id="student-phone" placeholder="E.g., +254 700 000 000" required
-                                autocomplete="tel">
+                            <label for="partner-email">Business Email</label>
+                            <input type="email" id="partner-email" placeholder="sarah@company.com" required autocomplete="email">
                         </div>
                         <div class="form-group">
-                            <label for="student-education">Level of Education</label>
-                            <select id="student-education" title="Select education level" required>
-                                <option value="">Select Education Level</option>
-                                <option>High School Graduate</option>
-                                <option>Certificate / Diploma Student</option>
-                                <option>Undergraduate Student</option>
-                                <option>Postgraduate / Degree Holder</option>
-                                <option>Self-Taught / Other</option>
-                            </select>
+                            <label for="partner-phone">Phone Number</label>
+                            <input type="tel" id="partner-phone" placeholder="E.g., +254 700 000 000" required autocomplete="tel">
                         </div>
                     </div>
 
-                    <!-- Row 3: Training Area & Study Mode -->
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="student-course">Desired Training Area</label>
-                            <select id="student-course" title="Select Desired Course" required>
-                                <option value="">Select a Course</option>
-                                <option>Computer Basics</option>
-                                <option>Digital Literacy</option>
-                                <option>Digital Business</option>
-                                <option>Graphic Design</option>
-                                <option>Front-End Web Development</option>
-                                <option>Technical Skills & IT Support</option>
-                                <option>Cybersecurity Essentials</option>
-                                <option>Cloud Computing</option>
-                                <option>UI/UX Prototyping</option>
-                                <option>Data Science & AI basics</option>
-                                <option>Mobile App Development</option>
-                                <option>IT Project Management</option>
-                                <option>Database Administration</option>
-                                <option>Ethical Hacking</option>
-                                <option>E-Commerce Systems</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="student-mode">Attendance Mode</label>
-                            <select id="student-mode" title="Select attendance mode" required>
-                                <option value="">Select Attendance Mode</option>
-                                <option>Physical Attendance (at the Hub)</option>
-                                <option>Online / Virtual Learning</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <!-- Row 4: Class Schedule & Sponsorship -->
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="student-schedule">Preferred Class Schedule</label>
-                            <select id="student-schedule" title="Select class schedule" required>
-                                <option value="">Select Preferred Schedule</option>
-                                <option>Morning Session (8:00 AM - 11:00 AM)</option>
-                                <option>Afternoon Session (2:00 PM - 5:00 PM)</option>
-                                <option>Evening Session (6:00 PM - 9:00 PM)</option>
-                                <option>Weekend Session (Saturday Only)</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="student-sponsor">Funding / Sponsorship Type</label>
-                            <select id="student-sponsor" title="Select sponsorship type" required>
-                                <option value="">Select Funding Type</option>
-                                <option>Self-Sponsored</option>
-                                <option>Parent / Guardian Sponsored</option>
-                                <option>Employer Sponsored</option>
-                                <option>Government / NGO Scholarship</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <!-- Row 5: Prior Experience & Statement -->
+                    <!-- Row 3: Cooperation Type -->
                     <div class="form-group">
-                        <label for="student-experience">Prior Computer Skill Level</label>
-                        <div class="experience-options-wrap">
-                            <label class="experience-radio-label">
-                                <input type="radio" name="experience" value="None" checked
-                                    class="experience-radio-input"> None (Complete Beginner)
-                            </label>
-                            <label class="experience-radio-label">
-                                <input type="radio" name="experience" value="Basic" class="experience-radio-input">
-                                Basic (Email, Word processing)
-                            </label>
-                            <label class="experience-radio-label">
-                                <input type="radio" name="experience" value="Intermediate"
-                                    class="experience-radio-input"> Intermediate (Understands code/design)
-                            </label>
-                        </div>
+                        <label for="partnership-type">Type of Interest</label>
+                        <select id="partnership-type" required>
+                            <option value="" disabled selected>Select interest category...</option>
+                            <option value="Investor">Venture / Equity Investment (Financial Growth Partner)</option>
+                            <option value="Attachment">Industrial Attachment Provider (Cohort Internships)</option>
+                            <option value="Sponsor">Corporate Sponsor (Underprivileged Cohort Scholarships)</option>
+                            <option value="Academic">Academic & Curriculum Collaboration (Co-teaching)</option>
+                            <option value="CorporateTraining">Corporate Training & Workforce Upskilling</option>
+                            <option value="Incubation">Tech Incubator & Research Co-developer</option>
+                            <option value="Other">Other Cooperation Channels (Specify in brief below)</option>
+                        </select>
                     </div>
 
+                    <!-- Row 4: Proposal Details -->
                     <div class="form-group form-group-spaced">
-                        <label for="student-goals">Expectations & Career Goals</label>
-                        <textarea id="student-goals"
-                            placeholder="Briefly share what you hope to achieve through this course (e.g. build a website, get a job, start freelancing)..."
-                            rows="4"></textarea>
+                        <label for="partner-notes">Proposal Brief & Key Objectives</label>
+                        <textarea id="partner-notes"
+                            placeholder="Briefly outline your strategic objectives, funding structures, or attachment capacity expectations..."
+                            rows="4" required></textarea>
                     </div>
 
-                    <!-- Row 6: Consent -->
-                    <div class="form-group form-group-spaced">
+                    <!-- Row 5: Consent -->
+                    <div class="consent-wrap">
                         <label class="consent-checkbox-label">
                             <input type="checkbox" required class="consent-checkbox-input">
-                            I hereby declare that the information provided is accurate, and I agree to enroll in the
-                            selected training track under the terms and rules of Mfano Africa ICT Hub.
+                            I verify that the provided organizational data is correct, and I agree to authorize Mfano Africa's executive team to review and initiate collaboration contact.
                         </label>
                     </div>
 
-                    <button type="submit" class="form-submit enroll-submit-btn" onclick="handleEnrollSubmit(this)">
-                        <svg class="lucide-send icon-small v-middle mr-4 enroll-submit-icon" viewBox="0 0 24 24"
-                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round">
-                            <line x1="22" y1="2" x2="11" y2="13"></line>
-                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-                        </svg> Submit Enrollment Application
-                    </button>
+                    <div class="form-actions text-center mt-2">
+                        <button type="submit" class="btn btn-primary" onclick="handlePartnerSubmit(this)">
+                            <svg class="lucide-briefcase icon-small v-middle mr-4" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                            </svg> Submit Strategic Brief
+                        </button>
+                    </div>
                 </form>
             </div>
         </div>
@@ -365,54 +295,50 @@
 
     <script type="module" src="./src/main.js"></script>
     <script>
-        // Custom interactive admission notification handler
-        window.handleEnrollSubmit = function (btn) {
-            const form = document.getElementById('enrollment-form');
+        // Custom interactive partnership brief handler
+        window.handlePartnerSubmit = function (btn) {
+            const form = document.getElementById('partner-form');
             if (!form.checkValidity()) {
                 form.reportValidity();
                 return;
             }
 
             event.preventDefault();
-            btn.innerHTML = `<span class="spinner"></span> Processing Admission...`;
+            btn.innerHTML = `<span class="spinner"></span> Reviewing Brief...`;
             btn.disabled = true;
 
             setTimeout(() => {
-                const studentName = document.getElementById('student-name').value;
-                const studentCourse = document.getElementById('student-course').value;
+                const orgName = document.getElementById('org-name').value;
+                const partnerType = document.getElementById('partnership-type').value;
 
                 // Beautiful Premium Alert Overlay
                 const alertOverlay = document.createElement('div');
                 alertOverlay.className = 'enroll-success-overlay';
 
                 const alertBox = document.createElement('div');
-                alertBox.className = 'glass-panel enroll-success-box';
-
+                alertBox.className = 'enroll-success-box';
                 alertBox.innerHTML = `
-                    <div class="enroll-success-icon-wrap">
-                        <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="var(--cyan)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="20 6 9 17 4 12"></polyline>
+                    <div class="success-icon-wrap">
+                        <svg class="lucide-check-circle success-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
                         </svg>
                     </div>
-                    <h3 class="enroll-success-title">Application Successful!</h3>
-                    <p class="enroll-success-student">Congratulations, ${studentName}!</p>
-                    <p class="enroll-success-text">
-                        Your registration for <strong>${studentCourse}</strong> has been successfully received. We have reserved your slot. An admissions counselor will contact you at your email and phone number within 24 hours to guide you through your class timetable, required documents, and tuition orientation.
-                    </p>
-                    <button id="close-enroll-alert" class="btn-primary enroll-success-close-btn">Explore Mfano Hub →</button>
+                    <h3>Brief Received!</h3>
+                    <p class="success-p-main">Thank you, <strong>${orgName}</strong>, for submitting your <strong>${partnerType}</strong> strategic brief.</p>
+                    <p class="success-p-sub">Our executive board of directors will review your brief details and schedule a direct Zoom conference call within 24 hours.</p>
+                    <button class="btn btn-primary w-full mt-4" id="close-partner-alert">Return to Services</button>
                 `;
 
                 alertOverlay.appendChild(alertBox);
                 document.body.appendChild(alertOverlay);
 
-                document.getElementById('close-enroll-alert').onclick = function () {
+                document.getElementById('close-partner-alert').onclick = function () {
                     alertOverlay.remove();
                     form.reset();
-                    window.location.href = './courses.html';
+                    window.location.href = './services.html';
                 };
-
-                btn.innerHTML = `<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Enrollment Submitted`;
-            }, 1800);
+            }, 1200);
         };
     </script>
 </body>

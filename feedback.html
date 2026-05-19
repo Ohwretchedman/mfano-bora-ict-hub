@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description"
-        content="Enroll today at Mfano Africa ICT Hub and launch your career in Software Development, Cybersecurity, Design, and more.">
+        content="Help us improve Mfano Africa ICT Hub. Tell us about your website experience and suggest improvements.">
     <meta name="author" content="Mfano Africa ICT Hub">
     <meta name="robots" content="index, follow">
-    <meta property="og:title" content="Student Enrollment | Mfano Africa ICT Hub">
+    <meta property="og:title" content="Website Feedback | Mfano Africa ICT Hub">
     <meta property="og:description"
-        content="Secure your spot in East Africa's premier ICT training programs. Register now.">
+        content="Share your digital experience with us and help co-build East Africa's leading technology training portal.">
     <meta property="og:type" content="website">
-    <title>Student Enrollment | Mfano Africa ICT Hub</title>
+    <title>Website Feedback | Mfano Africa ICT Hub</title>
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <script src="https://cdn.jsdelivr.net/npm/lucide@latest"></script>
     <link rel="stylesheet" href="./src/style.css">
 </head>
 
@@ -48,157 +49,165 @@
         </div>
     </nav>
 
-    <!-- ENROLLMENT SECTION -->
+    <!-- FEEDBACK SECTION -->
     <section id="contact" class="pt-hero">
         <div class="reveal text-center m-auto enroll-header-wrap">
-            <div class="section-label">Student Portal</div>
-            <h2 class="section-title">Start Your <span class="text-cyan">Tech Journey Today</span></h2>
-            <p class="section-sub">Take the first step toward masterclass professional tech expertise. Fill out the
-                comprehensive form below to reserve your slot in your desired training track.</p>
+            <div class="section-label">Digital Lab</div>
+            <h2 class="section-title">Co-Build Our <span class="text-cyan">Digital Experience</span></h2>
+            <p class="section-sub">Help us elevate Mfano's web home. Tell us about your journey navigating our website and share your ideas for refinement.</p>
         </div>
 
         <div class="contact-layout enroll-layout-centered">
+            <!-- Feedback Form Block -->
             <div class="contact-form-wrap reveal">
-                <h4 class="form-title">Student Registration & Admission Form</h4>
-                <p class="enroll-form-desc">Please provide all the necessary information below. Our admissions registrar
-                    will review your application and reach out within 24 hours to confirm your timetable and admission
-                    details.</p>
+                <h4 class="form-title">Website Feedback & Suggestion Hub</h4>
+                <p class="enroll-form-desc">We iterate constantly based on user experiences. Your direct brief will help us perfect our navigation layout, speed, and overall digital experience.</p>
 
-                <form id="enrollment-form" novalidate>
-                    <!-- Row 1: Personal Details -->
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="student-name">Full Name</label>
-                            <input type="text" id="student-name" placeholder="E.g., John Kamau" required
-                                autocomplete="name">
-                        </div>
-                        <div class="form-group">
-                            <label for="student-email">Email Address</label>
-                            <input type="email" id="student-email" placeholder="john@example.com" required
-                                autocomplete="email">
+                <form id="feedback-form" novalidate>
+                    <!-- Web Rating Section -->
+                    <div class="form-group form-group-spaced">
+                        <label>How would you rate your overall website experience?</label>
+                        <div class="rating-options-wrap">
+                            <label class="rating-radio-label">
+                                <input type="radio" name="web-rating" value="Excellent" checked class="rating-radio-input">
+                                <span class="rating-emoji">🤩</span> Excellent
+                            </label>
+                            <label class="rating-radio-label">
+                                <input type="radio" name="web-rating" value="Good" class="rating-radio-input">
+                                <span class="rating-emoji">🙂</span> Good
+                            </label>
+                            <label class="rating-radio-label">
+                                <input type="radio" name="web-rating" value="Average" class="rating-radio-input">
+                                <span class="rating-emoji">😐</span> Average
+                            </label>
+                            <label class="rating-radio-label">
+                                <input type="radio" name="web-rating" value="NeedsImprovement" class="rating-radio-input">
+                                <span class="rating-emoji">😕</span> Needs Improvement
+                            </label>
                         </div>
                     </div>
 
-                    <!-- Row 2: Phone & Education -->
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="student-phone">Phone Number</label>
-                            <input type="tel" id="student-phone" placeholder="E.g., +254 700 000 000" required
-                                autocomplete="tel">
-                        </div>
-                        <div class="form-group">
-                            <label for="student-education">Level of Education</label>
-                            <select id="student-education" title="Select education level" required>
-                                <option value="">Select Education Level</option>
-                                <option>High School Graduate</option>
-                                <option>Certificate / Diploma Student</option>
-                                <option>Undergraduate Student</option>
-                                <option>Postgraduate / Degree Holder</option>
-                                <option>Self-Taught / Other</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <!-- Row 3: Training Area & Study Mode -->
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="student-course">Desired Training Area</label>
-                            <select id="student-course" title="Select Desired Course" required>
-                                <option value="">Select a Course</option>
-                                <option>Computer Basics</option>
-                                <option>Digital Literacy</option>
-                                <option>Digital Business</option>
-                                <option>Graphic Design</option>
-                                <option>Front-End Web Development</option>
-                                <option>Technical Skills & IT Support</option>
-                                <option>Cybersecurity Essentials</option>
-                                <option>Cloud Computing</option>
-                                <option>UI/UX Prototyping</option>
-                                <option>Data Science & AI basics</option>
-                                <option>Mobile App Development</option>
-                                <option>IT Project Management</option>
-                                <option>Database Administration</option>
-                                <option>Ethical Hacking</option>
-                                <option>E-Commerce Systems</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="student-mode">Attendance Mode</label>
-                            <select id="student-mode" title="Select attendance mode" required>
-                                <option value="">Select Attendance Mode</option>
-                                <option>Physical Attendance (at the Hub)</option>
-                                <option>Online / Virtual Learning</option>
-                            </select>
+                    <!-- Row 2: What Went Well (Checkboxes) -->
+                    <div class="form-group form-group-spaced">
+                        <label>What parts of the website did you enjoy the most?</label>
+                        <div class="enjoyed-options-wrap">
+                            <label class="enjoyed-checkbox-label">
+                                <input type="checkbox" name="enjoyed-part" value="Visuals" class="enjoyed-checkbox-input" checked> Visual Aesthetics & Glows
+                            </label>
+                            <label class="enjoyed-checkbox-label">
+                                <input type="checkbox" name="enjoyed-part" value="Speed" class="enjoyed-checkbox-input"> Fast Page Load Times
+                            </label>
+                            <label class="enjoyed-checkbox-label">
+                                <input type="checkbox" name="enjoyed-part" value="Navigation" class="enjoyed-checkbox-input"> Clear Dropdowns & Menus
+                            </label>
+                            <label class="enjoyed-checkbox-label">
+                                <input type="checkbox" name="enjoyed-part" value="Content" class="enjoyed-checkbox-input"> Course Details & Info
+                            </label>
+                            <label class="enjoyed-checkbox-label">
+                                <input type="checkbox" name="enjoyed-part" value="Mobile" class="enjoyed-checkbox-input"> Responsive Mobile Layout
+                            </label>
                         </div>
                     </div>
 
-                    <!-- Row 4: Class Schedule & Sponsorship -->
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="student-schedule">Preferred Class Schedule</label>
-                            <select id="student-schedule" title="Select class schedule" required>
-                                <option value="">Select Preferred Schedule</option>
-                                <option>Morning Session (8:00 AM - 11:00 AM)</option>
-                                <option>Afternoon Session (2:00 PM - 5:00 PM)</option>
-                                <option>Evening Session (6:00 PM - 9:00 PM)</option>
-                                <option>Weekend Session (Saturday Only)</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="student-sponsor">Funding / Sponsorship Type</label>
-                            <select id="student-sponsor" title="Select sponsorship type" required>
-                                <option value="">Select Funding Type</option>
-                                <option>Self-Sponsored</option>
-                                <option>Parent / Guardian Sponsored</option>
-                                <option>Employer Sponsored</option>
-                                <option>Government / NGO Scholarship</option>
-                            </select>
+                    <!-- Row 3: Description of Experience -->
+                    <div class="form-group form-group-spaced">
+                        <label for="feedback-experience">Describe the experience you had when using the website</label>
+                        <textarea id="feedback-experience"
+                            placeholder="Share what felt great or highlight any specific difficulties or bugs you encountered while browsing..."
+                            rows="4" required></textarea>
+                    </div>
+
+                    <!-- Row 4: Suggestions for betterment -->
+                    <div class="form-group form-group-spaced">
+                        <label for="feedback-betterment">How can we make this experience even better for you?</label>
+                        <textarea id="feedback-betterment"
+                            placeholder="What features, layouts, colors, or page contents would you love to see added next?..."
+                            rows="4" required></textarea>
+                    </div>
+
+
+                    <!-- Company Feedback Divider -->
+                    <div class="feedback-divider mt-4 mb-4"></div>
+                    
+                    <h4 class="form-title text-cyan">Company & Training Feedback</h4>
+                    <p class="enroll-form-desc">Tell us about your physical or virtual learning journey with Mfano Africa ICT Hub itself (our courses, instructors, curriculum, or administration).</p>
+
+                    <!-- Company Rating Section -->
+                    <div class="form-group form-group-spaced">
+                        <label>How would you rate Mfano Africa as an ICT Training Institution?</label>
+                        <div class="rating-options-wrap">
+                            <label class="rating-radio-label">
+                                <input type="radio" name="company-rating" value="Excellent" checked class="rating-radio-input">
+                                <span class="rating-emoji">🤩</span> Excellent
+                            </label>
+                            <label class="rating-radio-label">
+                                <input type="radio" name="company-rating" value="Good" class="rating-radio-input">
+                                <span class="rating-emoji">🙂</span> Good
+                            </label>
+                            <label class="rating-radio-label">
+                                <input type="radio" name="company-rating" value="Average" class="rating-radio-input">
+                                <span class="rating-emoji">😐</span> Average
+                            </label>
+                            <label class="rating-radio-label">
+                                <input type="radio" name="company-rating" value="NeedsImprovement" class="rating-radio-input">
+                                <span class="rating-emoji">😕</span> Needs Improvement
+                            </label>
                         </div>
                     </div>
 
-                    <!-- Row 5: Prior Experience & Statement -->
+                    <!-- What is Great about Mfano (Checkboxes) -->
+                    <div class="form-group form-group-spaced">
+                        <label>What areas of the company do you value the most?</label>
+                        <div class="enjoyed-options-wrap">
+                            <label class="enjoyed-checkbox-label">
+                                <input type="checkbox" name="company-part" value="Instructors" class="enjoyed-checkbox-input" checked> Expert Instructors
+                            </label>
+                            <label class="enjoyed-checkbox-label">
+                                <input type="checkbox" name="company-part" value="Curriculum" class="enjoyed-checkbox-input" checked> Practical Curriculum
+                            </label>
+                            <label class="enjoyed-checkbox-label">
+                                <input type="checkbox" name="company-part" value="Attachments" class="enjoyed-checkbox-input"> Attachment Placements
+                            </label>
+                            <label class="enjoyed-checkbox-label">
+                                <input type="checkbox" name="company-part" value="Facilities" class="enjoyed-checkbox-input"> Modern Hub Labs
+                            </label>
+                            <label class="enjoyed-checkbox-label">
+                                <input type="checkbox" name="company-part" value="Support" class="enjoyed-checkbox-input"> Friendly Support Staff
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Company Feedback Description -->
+                    <div class="form-group form-group-spaced">
+                        <label for="company-experience">Describe your experience with our classes, teachers, or administration</label>
+                        <textarea id="company-experience"
+                            placeholder="Tell us about your enrollment process, lessons, or overall training quality..."
+                            rows="4" required></textarea>
+                    </div>
+
+                    <!-- Suggestions for Company betterment -->
+                    <div class="form-group form-group-spaced">
+                        <label for="company-betterment">How can Mfano Africa serve you or other students better?</label>
+                        <textarea id="company-betterment"
+                            placeholder="What new courses, training schedules, or internship opportunities would you like us to introduce?..."
+                            rows="4" required></textarea>
+                    </div>
+
+                    <!-- Optional Email -->
                     <div class="form-group">
-                        <label for="student-experience">Prior Computer Skill Level</label>
-                        <div class="experience-options-wrap">
-                            <label class="experience-radio-label">
-                                <input type="radio" name="experience" value="None" checked
-                                    class="experience-radio-input"> None (Complete Beginner)
-                            </label>
-                            <label class="experience-radio-label">
-                                <input type="radio" name="experience" value="Basic" class="experience-radio-input">
-                                Basic (Email, Word processing)
-                            </label>
-                            <label class="experience-radio-label">
-                                <input type="radio" name="experience" value="Intermediate"
-                                    class="experience-radio-input"> Intermediate (Understands code/design)
-                            </label>
-                        </div>
+                        <label for="feedback-email">Email Address (Optional — for follow-up)</label>
+                        <input type="email" id="feedback-email" placeholder="E.g., reviewer@company.com" autocomplete="email">
                     </div>
 
-                    <div class="form-group form-group-spaced">
-                        <label for="student-goals">Expectations & Career Goals</label>
-                        <textarea id="student-goals"
-                            placeholder="Briefly share what you hope to achieve through this course (e.g. build a website, get a job, start freelancing)..."
-                            rows="4"></textarea>
+                    <div class="form-actions text-center mt-4">
+                        <button type="submit" class="btn btn-primary" onclick="handleFeedbackSubmit(this)">
+                            <svg class="lucide-thumbs-up icon-small v-middle mr-4" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+                            </svg> Submit Feedback Portfolio
+                        </button>
                     </div>
-
-                    <!-- Row 6: Consent -->
-                    <div class="form-group form-group-spaced">
-                        <label class="consent-checkbox-label">
-                            <input type="checkbox" required class="consent-checkbox-input">
-                            I hereby declare that the information provided is accurate, and I agree to enroll in the
-                            selected training track under the terms and rules of Mfano Africa ICT Hub.
-                        </label>
-                    </div>
-
-                    <button type="submit" class="form-submit enroll-submit-btn" onclick="handleEnrollSubmit(this)">
-                        <svg class="lucide-send icon-small v-middle mr-4 enroll-submit-icon" viewBox="0 0 24 24"
-                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round">
-                            <line x1="22" y1="2" x2="11" y2="13"></line>
-                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-                        </svg> Submit Enrollment Application
-                    </button>
                 </form>
             </div>
         </div>
@@ -365,54 +374,49 @@
 
     <script type="module" src="./src/main.js"></script>
     <script>
-        // Custom interactive admission notification handler
-        window.handleEnrollSubmit = function (btn) {
-            const form = document.getElementById('enrollment-form');
+        // Custom interactive feedback handler
+        window.handleFeedbackSubmit = function (btn) {
+            const form = document.getElementById('feedback-form');
             if (!form.checkValidity()) {
                 form.reportValidity();
                 return;
             }
 
             event.preventDefault();
-            btn.innerHTML = `<span class="spinner"></span> Processing Admission...`;
+            btn.innerHTML = `<span class="spinner"></span> Packaging Portfolio...`;
             btn.disabled = true;
 
             setTimeout(() => {
-                const studentName = document.getElementById('student-name').value;
-                const studentCourse = document.getElementById('student-course').value;
+                const webRating = document.querySelector('input[name="web-rating"]:checked').value;
+                const companyRating = document.querySelector('input[name="company-rating"]:checked').value;
 
-                // Beautiful Premium Alert Overlay
+                // Beautiful Premium Success Dialog Overlay
                 const alertOverlay = document.createElement('div');
                 alertOverlay.className = 'enroll-success-overlay';
 
                 const alertBox = document.createElement('div');
-                alertBox.className = 'glass-panel enroll-success-box';
-
+                alertBox.className = 'enroll-success-box';
                 alertBox.innerHTML = `
-                    <div class="enroll-success-icon-wrap">
-                        <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="var(--cyan)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="20 6 9 17 4 12"></polyline>
+                    <div class="success-icon-wrap">
+                        <svg class="lucide-heart success-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
                         </svg>
                     </div>
-                    <h3 class="enroll-success-title">Application Successful!</h3>
-                    <p class="enroll-success-student">Congratulations, ${studentName}!</p>
-                    <p class="enroll-success-text">
-                        Your registration for <strong>${studentCourse}</strong> has been successfully received. We have reserved your slot. An admissions counselor will contact you at your email and phone number within 24 hours to guide you through your class timetable, required documents, and tuition orientation.
-                    </p>
-                    <button id="close-enroll-alert" class="btn-primary enroll-success-close-btn">Explore Mfano Hub →</button>
+                    <h3>Feedback Integrated!</h3>
+                    <p class="success-p-main">Web Rating: <strong>${webRating}</strong> | Company Rating: <strong>${companyRating}</strong></p>
+                    <p class="success-p-sub">Thank you for sharing your feedback. Your suggestions for both the website experience and Mfano Africa's institutional operations have been delivered directly to our core administration squad!</p>
+                    <button class="btn btn-primary w-full mt-4" id="close-feedback-alert">Back to Home</button>
                 `;
 
                 alertOverlay.appendChild(alertBox);
                 document.body.appendChild(alertOverlay);
 
-                document.getElementById('close-enroll-alert').onclick = function () {
+                document.getElementById('close-feedback-alert').onclick = function () {
                     alertOverlay.remove();
                     form.reset();
-                    window.location.href = './courses.html';
+                    window.location.href = './index.html';
                 };
-
-                btn.innerHTML = `<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Enrollment Submitted`;
-            }, 1800);
+            }, 1200);
         };
     </script>
 </body>
