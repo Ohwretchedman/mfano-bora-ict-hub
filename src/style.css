@@ -777,7 +777,7 @@ nav.scrolled {
     background: transparent;
 }
 
-#about > div {
+#about>div {
     padding-left: 0 !important;
     padding-right: 0 !important;
     width: 100% !important;
@@ -2355,8 +2355,13 @@ footer {
     color: var(--cyan);
 }
 
+.blog-cta-wrap {
+    padding-bottom: 1.5rem;
+}
+
 .footer-bottom {
     padding-top: 2rem;
+    padding-bottom: 0.8rem;
     padding-left: 5%;
     padding-right: 5%;
     margin-top: 3rem;
