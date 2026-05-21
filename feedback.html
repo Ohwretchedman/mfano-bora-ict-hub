@@ -6,16 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description"
-        content="Help us improve Mfano Africa ICT Hub. Tell us about your website experience and suggest improvements.">
+        content="Help us improve Mfano Africa ICT Hub. Tell us about your hub & website experience and suggest improvements.">
     <meta name="author" content="Mfano Africa ICT Hub">
     <meta name="robots" content="index, follow">
-    <meta property="og:title" content="Website Feedback | Mfano Africa ICT Hub">
+    <meta property="og:title" content="Mfano Experience Feedback | Mfano Africa ICT Hub">
     <meta property="og:description"
-        content="Share your digital experience with us and help co-build East Africa's leading technology training portal.">
+        content="Share your digital & training experience with us and help co-build East Africa's leading technology training portal.">
     <meta property="og:type" content="website">
-    <title>Website Feedback | Mfano Africa ICT Hub</title>
+    <title>Mfano Experience Feedback | Mfano Africa ICT Hub</title>
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <script src="https://cdn.jsdelivr.net/npm/lucide@latest"></script>
+        <link rel="preload" href="/mfano-bora-africa.png" as="image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&family=Outfit:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/style.css">
 </head>
 
@@ -27,7 +31,6 @@
                 <img src="/mfano-bora-africa.png" alt="Mfano Bora Logo" class="icon-nav">
                 <div class="logo-text-wrapper">
                     <span class="logo-text">Mfano Africa <span>ICT Hub</span></span>
-                    <span class="logo-subtitle">East Africa's Premier ICT Training Hub</span>
                 </div>
             </a>
 
@@ -35,12 +38,12 @@
 
             <ul class="nav-links">
                 <li><a href="./index.html">Home</a></li>
-                <li><a href="./services.html">Services</a></li>
-                <li><a href="./attachments.html">Attachments</a></li>
+                <li><a href="./attachments.html">Attachment</a></li>
                 <li><a href="./courses.html">Training Areas</a></li>
+                <li><a href="./services.html">Services</a></li>
                 <li><a href="./gallery.html">Gallery</a></li>
-                <li><a href="./testimonials.html">Testimonials</a></li>
                 <li><a href="./portfolio.html">Portfolio</a></li>
+                <li><a href="./testimonials.html">Testimonials</a></li>
                 <li><a href="./blog.html">Blog</a></li>
                 <li><a href="./contact.html" class="nav-cta">Get In Touch</a></li>
             </ul>
@@ -52,16 +55,16 @@
     <!-- FEEDBACK SECTION -->
     <section id="contact" class="pt-hero">
         <div class="reveal text-center m-auto enroll-header-wrap">
-            <div class="section-label">Digital Lab</div>
-            <h2 class="section-title">Co-Build Our <span class="text-cyan">Digital Experience</span></h2>
-            <p class="section-sub">Help us elevate Mfano's web home. Tell us about your journey navigating our website and share your ideas for refinement.</p>
+            <div class="section-label">Experience Lab</div>
+            <h2 class="section-title">Co-Build the <span class="text-cyan">Mfano Experience</span></h2>
+            <p class="section-sub">Help us elevate Mfano Africa. Tell us about your journey with both our digital portal and physical training programs.</p>
         </div>
 
         <div class="contact-layout enroll-layout-centered">
             <!-- Feedback Form Block -->
             <div class="contact-form-wrap reveal">
-                <h4 class="form-title">Website Feedback & Suggestion Hub</h4>
-                <p class="enroll-form-desc">We iterate constantly based on user experiences. Your direct brief will help us perfect our navigation layout, speed, and overall digital experience.</p>
+                <h4 class="form-title text-cyan">1. Digital Portal & Web Experience</h4>
+                <p class="enroll-form-desc">We iterate constantly based on user experiences. Your direct brief will help us perfect our navigation layout, loading speed, and overall digital portal design.</p>
 
                 <form id="feedback-form" novalidate>
                     <!-- Web Rating Section -->
@@ -129,8 +132,8 @@
                     <!-- Company Feedback Divider -->
                     <div class="feedback-divider mt-4 mb-4"></div>
                     
-                    <h4 class="form-title text-cyan">Company & Training Feedback</h4>
-                    <p class="enroll-form-desc">Tell us about your physical or virtual learning journey with Mfano Africa ICT Hub itself (our courses, instructors, curriculum, or administration).</p>
+                    <h4 class="form-title text-cyan">2. Institutional & Training Experience</h4>
+                    <p class="enroll-form-desc">Tell us about your physical or virtual learning journey with Mfano Africa ICT Hub itself (our courses, instructors, curriculum, or administration squad).</p>
 
                     <!-- Company Rating Section -->
                     <div class="form-group form-group-spaced">
@@ -200,7 +203,7 @@
                     </div>
 
                     <div class="form-actions text-center mt-4">
-                        <button type="submit" class="btn btn-primary" onclick="handleFeedbackSubmit(this)">
+                        <button type="submit" class="btn btn-primary">
                             <svg class="lucide-thumbs-up icon-small v-middle mr-4" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round">
@@ -215,210 +218,165 @@
 
     <!-- FOOTER -->
     <footer>
-        <div class="footer-grid">
-            <div class="footer-brand">
-                <a href="./index.html" class="nav-logo">
-                    <img loading="lazy" src="/mfano-bora-africa.png" alt="Mfano Bora Logo" class="icon-logo">
-                    <span class="logo-text">Mfano Africa <span>ICT Hub</span></span>
-                </a>
-                <p>East Africa's leading ICT Hub empowering the next generation of African tech professionals through
-                    world-class training, innovation, and mentorship.</p>
-                <div class="social-links">
-                    <a href="#" class="social-btn" title="Facebook" target="_blank" rel="noopener noreferrer"><svg
-                            class="icon-med" viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
-                        </svg></a>
-                    <a href="#" class="social-btn" title="X" target="_blank" rel="noopener noreferrer"><svg
-                            class="icon-med" viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932 6.064-6.932zm-1.292 19.49h2.039L6.486 3.24H4.298l13.311 17.403z" />
-                        </svg></a>
-                    <a href="#" class="social-btn" title="Instagram" target="_blank" rel="noopener noreferrer"><svg
-                            class="icon-med" viewBox="0 0 448 512" fill="currentColor">
-                            <path
-                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
-                        </svg></a>
-                    <a href="#" class="social-btn" title="LinkedIn" target="_blank" rel="noopener noreferrer"><svg
-                            class="icon-med" viewBox="0 0 448 512" fill="currentColor">
-                            <path
-                                d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
-                        </svg></a>
-                </div>
-            </div>
-
-            <div class="footer-col">
-                <h5>Quick Links</h5>
-                <div class="rotating-list" id="quick-links-rotator">
-                    <!-- Batch 1 -->
-                    <ul class="rotator-batch active">
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./about.html">About Us</a></li>
-                        <li><a href="./services.html">Our Services</a></li>
-                        <li><a href="./attachments.html">Attachments</a></li>
-                        <li class="rotator-more-indicator">
-                            <div class="glowing-sweep-bar"></div>
-                        </li>
-                    </ul>
-                    <!-- Batch 2 -->
-                    <ul class="rotator-batch">
-                        <li><a href="./courses.html">Training Areas</a></li>
-                        <li><a href="./gallery.html">Gallery</a></li>
-                        <li><a href="./testimonials.html">Testimonials</a></li>
-                        <li><a href="./portfolio.html">Portfolio</a></li>
-                        <li class="rotator-more-indicator">
-                            <div class="glowing-sweep-bar"></div>
-                        </li>
-                    </ul>
-                    <!-- Batch 3 -->
-                    <ul class="rotator-batch">
-                        <li><a href="./team.html">The Team</a></li>
-                        <li><a href="./blog.html">Blog</a></li>
-                        <li><a href="./contact.html">Contact Us</a></li>
-                        <li><a href="./enroll.html">Student Enrollment</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="footer-col">
-                <h5>Training Areas</h5>
-                <div class="rotating-list" id="training-areas-rotator">
-                    <!-- Batch 1 -->
-                    <ul class="rotator-batch active">
-                        <li><a href="./courses.html">Computer Basics</a></li>
-                        <li><a href="./courses.html">Digital Literacy</a></li>
-                        <li><a href="./courses.html">Digital Business</a></li>
-                        <li><a href="./courses.html">Graphic Design</a></li>
-                        <li class="rotator-more-indicator">
-                            <div class="glowing-sweep-bar"></div>
-                        </li>
-                    </ul>
-                    <!-- Batch 2 -->
-                    <ul class="rotator-batch">
-                        <li><a href="./courses.html">Front-End Web</a></li>
-                        <li><a href="./courses.html">Technical Skills</a></li>
-                        <li><a href="./courses.html">Cybersecurity</a></li>
-                        <li><a href="./courses.html">Cloud Computing</a></li>
-                        <li class="rotator-more-indicator">
-                            <div class="glowing-sweep-bar"></div>
-                        </li>
-                    </ul>
-                    <!-- Batch 3 -->
-                    <ul class="rotator-batch">
-                        <li><a href="./courses.html">UI/UX Design</a></li>
-                        <li><a href="./courses.html">Data Science</a></li>
-                        <li><a href="./courses.html">Mobile App Dev</a></li>
-                        <li><a href="./courses.html">IT Management</a></li>
-                        <li class="rotator-more-indicator">
-                            <div class="glowing-sweep-bar"></div>
-                        </li>
-                    </ul>
-                    <!-- Batch 4 -->
-                    <ul class="rotator-batch">
-                        <li><a href="./courses.html">Database Admin</a></li>
-                        <li><a href="./courses.html">Ethical Hacking</a></li>
-                        <li><a href="./courses.html">E-Commerce</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="footer-col">
-                <h5>Contact</h5>
-                <ul>
-                    <li><a href="tel:+254700000000"><svg class="lucide-phone icon-small inline-block"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="./index.html" class="nav-logo">
+                        <img src="/mfano-bora-africa.png" alt="Mfano Bora Logo" class="icon-logo">
+                        <span class="logo-text">Mfano Africa <span>ICT Hub</span></span>
+                    </a>
+                    <p>East Africa's leading ICT Hub empowering the next generation of African tech professionals
+                        through
+                        world-class training, innovation, and mentorship.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-btn" title="Facebook" target="_blank" rel="noopener noreferrer"><svg
+                                class="icon-med" viewBox="0 0 24 24" fill="currentColor">
                                 <path
-                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
-                                </path>
-                            </svg> +254 700 000 000</a></li>
-                    <li><a href="mailto:info@mfanoafricaicthub.com"><svg class="lucide-mail icon-small inline-block"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
-                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-                            </svg> info@mfanoafricaicthub.com</a></li>
-                    <li><a href="./contact.html"><svg class="lucide-map-pin icon-small inline-block" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                <circle cx="12" cy="10" r="3"></circle>
-                            </svg> Mfano House, Ole Sein Rd, Nairobi, Kenya</a></li>
-                    <li><a href="./contact.html"><svg class="lucide-clock icon-small inline-block" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <circle cx="12" cy="12" r="9"></circle>
-                                <polyline points="12 6 12 12 16 14"></polyline>
-                            </svg> Mon–Fri: 7AM–5PM | Sat: 8AM–1PM</a></li>
-                </ul>
-            </div>
-        </div>
+                                    d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                            </svg></a>
+                        <a href="#" class="social-btn" title="X" target="_blank" rel="noopener noreferrer"><svg
+                                class="icon-med" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932 6.064-6.932zm-1.292 19.49h2.039L6.486 3.24H4.298l13.311 17.403z" />
+                            </svg></a>
+                        <a href="#" class="social-btn" title="Instagram" target="_blank" rel="noopener noreferrer"><svg
+                                class="icon-med" viewBox="0 0 448 512" fill="currentColor">
+                                <path
+                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                            </svg></a>
+                        <a href="#" class="social-btn" title="LinkedIn" target="_blank" rel="noopener noreferrer"><svg
+                                class="icon-med" viewBox="0 0 448 512" fill="currentColor">
+                                <path
+                                    d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+                            </svg></a>
+                    </div>
+                </div>
 
-        <div class="footer-bottom">
-            <div class="footer-row-all">
-                <div class="footer-accreditation">
-                    <span>Certified by:</span>
-                    <span class="badge">TVET Authority</span>
-                    <span class="badge">NITA Kenya</span>
-                    <span class="badge">ICT Authority</span>
+                <div class="footer-col">
+                    <h5>Quick Links</h5>
+                    <div class="rotating-list" id="quick-links-rotator">
+                        <!-- Batch 1 -->
+                        <ul class="rotator-batch active">
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./about.html">About Us</a></li>
+                            <li><a href="./services.html">Our Services</a></li>
+                            <li><a href="./attachments.html">Attachments</a></li>
+                            <li class="rotator-more-indicator">
+                                <div class="glowing-sweep-bar"></div>
+                            </li>
+                        </ul>
+                        <!-- Batch 2 -->
+                        <ul class="rotator-batch">
+                            <li><a href="./courses.html">Training Areas</a></li>
+                            <li><a href="./gallery.html">Gallery</a></li>
+                            <li><a href="./testimonials.html">Testimonials</a></li>
+                            <li><a href="./portfolio.html">Portfolio</a></li>
+                            <li class="rotator-more-indicator">
+                                <div class="glowing-sweep-bar"></div>
+                            </li>
+                        </ul>
+                        <!-- Batch 3 -->
+                        <ul class="rotator-batch">
+                            <li><a href="./team.html">The Team</a></li>
+                            <li><a href="./blog.html">Blog</a></li>
+                            <li><a href="./contact.html">Get In Touch</a></li>
+                            <li><a href="./enroll.html">Student Enrollment</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <p>© <span id="current-year">2026</span> <span>Mfano Africa ICT Hub</span>. All rights reserved.</p>
-                <div class="footer-links-bottom">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                    <a href="#">Sitemap</a>
+
+                <div class="footer-col">
+                    <h5>Training Areas</h5>
+                    <div class="rotating-list" id="training-areas-rotator">
+                        <!-- Batch 1 -->
+                        <ul class="rotator-batch active">
+                            <li><a href="./courses.html">Computer Basics</a></li>
+                            <li><a href="./courses.html">Digital Literacy</a></li>
+                            <li><a href="./courses.html">Digital Business</a></li>
+                            <li><a href="./courses.html">Graphic Design</a></li>
+                            <li class="rotator-more-indicator">
+                                <div class="glowing-sweep-bar"></div>
+                            </li>
+                        </ul>
+                        <!-- Batch 2 -->
+                        <ul class="rotator-batch">
+                            <li><a href="./courses.html">Front-End Web</a></li>
+                            <li><a href="./courses.html">Technical Skills</a></li>
+                            <li><a href="./courses.html">Cybersecurity</a></li>
+                            <li><a href="./courses.html">Cloud Computing</a></li>
+                            <li class="rotator-more-indicator">
+                                <div class="glowing-sweep-bar"></div>
+                            </li>
+                        </ul>
+                        <!-- Batch 3 -->
+                        <ul class="rotator-batch">
+                            <li><a href="./courses.html">UI/UX Design</a></li>
+                            <li><a href="./courses.html">Data Science</a></li>
+                            <li><a href="./courses.html">Mobile App Dev</a></li>
+                            <li><a href="./courses.html">IT Management</a></li>
+                            <li class="rotator-more-indicator">
+                                <div class="glowing-sweep-bar"></div>
+                            </li>
+                        </ul>
+                        <!-- Batch 4 -->
+                        <ul class="rotator-batch">
+                            <li><a href="./courses.html">Database Admin</a></li>
+                            <li><a href="./courses.html">Ethical Hacking</a></li>
+                            <li><a href="./courses.html">E-Commerce</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h5>Contact</h5>
+                    <ul>
+                        <li><a href="tel:+254700000000"><svg class="lucide-phone icon-small inline-block"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                    </path>
+                                </svg> +254 700 000 000</a></li>
+                        <li><a href="mailto:info@mfanoafricaicthub.com"><svg class="lucide-mail icon-small inline-block"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                                </svg> info@mfanoafricaicthub.com</a></li>
+                        <li><a href="./contact.html"><svg class="lucide-map-pin icon-small inline-block"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg> Mfano House, Ole Sein Rd, Nairobi, Kenya</a></li>
+                        <li><a href="./contact.html"><svg class="lucide-clock icon-small inline-block"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="9"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg> Mon–Fri: 7AM–5PM | Sat: 8AM–1PM</a></li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </footer>
+
+            <div class="footer-bottom">
+                <div class="footer-row-all">
+                    <div class="footer-accreditation">
+                        <span>Certified by:</span>
+                        <span class="badge">TVET Authority</span>
+                        <span class="badge">NITA Kenya</span>
+                        <span class="badge">ICT Authority</span>
+                    </div>
+                    <p>© <span id="current-year">2026</span> <span>Mfano Africa ICT Hub</span>. All rights reserved.</p>
+                    <div class="footer-links-bottom">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
     <script type="module" src="./src/main.js"></script>
-    <script>
-        // Custom interactive feedback handler
-        window.handleFeedbackSubmit = function (btn) {
-            const form = document.getElementById('feedback-form');
-            if (!form.checkValidity()) {
-                form.reportValidity();
-                return;
-            }
-
-            event.preventDefault();
-            btn.innerHTML = `<span class="spinner"></span> Packaging Portfolio...`;
-            btn.disabled = true;
-
-            setTimeout(() => {
-                const webRating = document.querySelector('input[name="web-rating"]:checked').value;
-                const companyRating = document.querySelector('input[name="company-rating"]:checked').value;
-
-                // Beautiful Premium Success Dialog Overlay
-                const alertOverlay = document.createElement('div');
-                alertOverlay.className = 'enroll-success-overlay';
-
-                const alertBox = document.createElement('div');
-                alertBox.className = 'enroll-success-box';
-                alertBox.innerHTML = `
-                    <div class="success-icon-wrap">
-                        <svg class="lucide-heart success-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
-                        </svg>
-                    </div>
-                    <h3>Feedback Integrated!</h3>
-                    <p class="success-p-main">Web Rating: <strong>${webRating}</strong> | Company Rating: <strong>${companyRating}</strong></p>
-                    <p class="success-p-sub">Thank you for sharing your feedback. Your suggestions for both the website experience and Mfano Africa's institutional operations have been delivered directly to our core administration squad!</p>
-                    <button class="btn btn-primary w-full mt-4" id="close-feedback-alert">Back to Home</button>
-                `;
-
-                alertOverlay.appendChild(alertBox);
-                document.body.appendChild(alertOverlay);
-
-                document.getElementById('close-feedback-alert').onclick = function () {
-                    alertOverlay.remove();
-                    form.reset();
-                    window.location.href = './index.html';
-                };
-            }, 1200);
-        };
-    </script>
 </body>
 
 </html>

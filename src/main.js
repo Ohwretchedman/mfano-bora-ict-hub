@@ -84,50 +84,172 @@ document.addEventListener('DOMContentLoaded', () => {
 
 /* ── Form Handler with Exceptional Error Handling ── */
 
-window.handleSubmit = function (btn) {
-  try {
-    const form = btn.closest('form');
-    if (form && !form.checkValidity()) {
+function registerFormHandler(formId, submitText, processingText, successText, onSubmitSuccess) {
+  const form = document.getElementById(formId);
+  if (!form) return;
+
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    if (!form.checkValidity()) {
       form.reportValidity();
       return;
     }
 
-    const original = btn.innerHTML;
-    btn.disabled = true;
-    btn.innerHTML = '<span class="loader"></span> Sending...';
+    const btn = form.querySelector('button[type="submit"]');
+    if (!btn || btn.disabled) return;
 
-    // Simulated Secure API Call
+    const originalHTML = btn.innerHTML;
+    btn.disabled = true;
+    btn.innerHTML = `<span class="loader"></span> ${processingText}`;
+
     setTimeout(() => {
       try {
-        // Success Logic
-        btn.innerHTML = '✓ Message Sent!';
-        btn.classList.add('btn-success');
-        if (form) form.reset();
+        if (onSubmitSuccess) {
+          onSubmitSuccess(form, btn, originalHTML);
+        } else {
+          // Default Success State
+          btn.innerHTML = `✓ ${successText}`;
+          btn.classList.add('btn-success');
+          form.reset();
+
+          setTimeout(() => {
+            btn.innerHTML = originalHTML;
+            btn.classList.remove('btn-success');
+            btn.disabled = false;
+          }, 4000);
+        }
+      } catch (error) {
+        console.error(`[Form] Submission error in ${formId}:`, error);
+        btn.innerHTML = 'Submission Error. Retry?';
+        btn.classList.add('btn-error');
+        btn.disabled = false;
 
         setTimeout(() => {
-          btn.innerHTML = original;
-          btn.classList.remove('btn-success');
-          btn.disabled = false;
-        }, 4000);
-      } catch (innerError) {
-        throw new Error('Callback execution failed');
+          btn.classList.remove('btn-error');
+          btn.innerHTML = originalHTML;
+        }, 3000);
       }
     }, 1500);
+  });
+}
 
-  } catch (error) {
-    console.error('[Form] Submission error:', error);
-    btn.innerHTML = 'Submission Error. Retry?';
-    btn.classList.add('btn-error');
+// Bind all forms cleanly on DOM load
+document.addEventListener('DOMContentLoaded', () => {
+  // 1. General Contact Forms
+  registerFormHandler('contact-form', 'Send Message', 'Sending...', 'Message Sent!', null);
+  registerFormHandler('home-contact-form', 'Send Message', 'Sending...', 'Message Sent!', null);
+
+  // 2. Student Enrollment Form
+  registerFormHandler('enrollment-form', 'Submit Enrollment Application', 'Processing Admission...', 'Enrollment Submitted', (form, btn, originalHTML) => {
+    const studentName = document.getElementById('student-name').value;
+    const studentCourse = document.getElementById('student-course').value;
+
+    const alertOverlay = document.createElement('div');
+    alertOverlay.className = 'enroll-success-overlay';
+
+    const alertBox = document.createElement('div');
+    alertBox.className = 'glass-panel enroll-success-box';
+    alertBox.innerHTML = `
+        <div class="enroll-success-icon-wrap">
+            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="var(--cyan)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+        </div>
+        <h3 class="enroll-success-title">Application Successful!</h3>
+        <p class="enroll-success-student">Congratulations, ${studentName}!</p>
+        <p class="enroll-success-text">
+            Your registration for <strong>${studentCourse}</strong> has been successfully received. We have reserved your slot. An admissions counselor will contact you at your email and phone number within 24 hours to guide you through your class timetable, required documents, and tuition orientation.
+        </p>
+        <button id="close-enroll-alert" class="btn-primary enroll-success-close-btn">Explore Mfano Hub →</button>
+    `;
+
+    alertOverlay.appendChild(alertBox);
+    document.body.appendChild(alertOverlay);
+
+    document.getElementById('close-enroll-alert').onclick = function () {
+        alertOverlay.remove();
+        form.reset();
+        window.location.href = './courses.html';
+    };
+
+    btn.innerHTML = `<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Enrollment Submitted`;
     btn.disabled = false;
-    
-    setTimeout(() => {
-      btn.classList.remove('btn-error');
-      btn.innerHTML = 'Send Message';
-    }, 3000);
-  }
-};
+  });
 
-/* ── Initialization ── */
+  // 3. Strategic Partner Form
+  registerFormHandler('partner-form', 'Submit Strategic Brief', 'Reviewing Brief...', 'Brief Received!', (form, btn, originalHTML) => {
+    const orgName = document.getElementById('org-name').value;
+    const partnerType = document.getElementById('partnership-type').value;
+
+    const alertOverlay = document.createElement('div');
+    alertOverlay.className = 'enroll-success-overlay';
+
+    const alertBox = document.createElement('div');
+    alertBox.className = 'enroll-success-box';
+    alertBox.innerHTML = `
+        <div class="success-icon-wrap">
+            <svg class="lucide-check-circle success-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+        </div>
+        <h3>Brief Received!</h3>
+        <p class="success-p-main">Thank you, <strong>${orgName}</strong>, for submitting your <strong>${partnerType}</strong> strategic brief.</p>
+        <p class="success-p-sub">Our executive board of directors will review your brief details and schedule a direct Zoom conference call within 24 hours.</p>
+        <button class="btn btn-primary w-full mt-4" id="close-partner-alert">Return to Services</button>
+    `;
+
+    alertOverlay.appendChild(alertBox);
+    document.body.appendChild(alertOverlay);
+
+    document.getElementById('close-partner-alert').onclick = function () {
+        alertOverlay.remove();
+        form.reset();
+        window.location.href = './services.html';
+    };
+
+    btn.innerHTML = originalHTML;
+    btn.disabled = false;
+  });
+
+  // 4. Feedback Hub Form
+  registerFormHandler('feedback-form', 'Submit Feedback Portfolio', 'Packaging Portfolio...', 'Feedback Integrated!', (form, btn, originalHTML) => {
+    const webRatingInput = document.querySelector('input[name="web-rating"]:checked');
+    const companyRatingInput = document.querySelector('input[name="company-rating"]:checked');
+
+    const webRating = webRatingInput ? webRatingInput.value : 'N/A';
+    const companyRating = companyRatingInput ? companyRatingInput.value : 'N/A';
+
+    const alertOverlay = document.createElement('div');
+    alertOverlay.className = 'enroll-success-overlay';
+
+    const alertBox = document.createElement('div');
+    alertBox.className = 'enroll-success-box';
+    alertBox.innerHTML = `
+        <div class="success-icon-wrap">
+            <svg class="lucide-heart success-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+            </svg>
+        </div>
+        <h3>Feedback Integrated!</h3>
+        <p class="success-p-main">Web Rating: <strong>${webRating}</strong> | Company Rating: <strong>${companyRating}</strong></p>
+        <p class="success-p-sub">Thank you for sharing your feedback. Your suggestions for both the website experience and Mfano Africa's institutional operations have been delivered directly to our core administration squad!</p>
+        <button class="btn btn-primary w-full mt-4" id="close-feedback-alert">Back to Home</button>
+    `;
+
+    alertOverlay.appendChild(alertBox);
+    document.body.appendChild(alertOverlay);
+
+    document.getElementById('close-feedback-alert').onclick = function () {
+        alertOverlay.remove();
+        form.reset();
+        window.location.href = './index.html';
+    };
+
+    btn.innerHTML = originalHTML;
+    btn.disabled = false;
+  });
+});
 
 document.addEventListener('DOMContentLoaded', () => {
   try {
@@ -237,7 +359,9 @@ document.addEventListener('DOMContentLoaded', () => {
     setupRotator('#quick-links-rotator');
     setupRotator('#training-areas-rotator');
 
+
   } catch (initError) {
     console.error('[Engine] Initialization failed:', initError);
   }
 });
+
